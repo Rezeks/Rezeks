@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="600" height="420" viewBox="0 0 600 420" role="img" aria-labelledby="title desc">
-<title id="title">Rezeks — monthly contribution rhythm</title><desc id="desc">Calendar-month contribution totals from the public GitHub profile. 2025-10: 0; 2025-11: 13; 2025-12: 23; 2026-01: 2; 2026-02: 5; 2026-03: 0; 2026-04: 17; 2026-05: 22; 2026-06: 0; 2026-07: 0; 2026-08: 0; 2026-09: 24; 2026-10: 3. Boundary months may be partial.</desc>
+<title id="title">Rezeks — monthly contribution rhythm</title><desc id="desc">Calendar-month contribution totals from the public GitHub profile. 2025-10: 0; 2025-11: 13; 2025-12: 23; 2026-01: 2; 2026-02: 5; 2026-03: 0; 2026-04: 17; 2026-05: 22; 2026-06: 0; 2026-07: 0; 2026-08: 0; 2026-09: 24; 2026-10: 4. Boundary months may be partial.</desc>
 <defs><linearGradient id="surface" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#18242b"/><stop offset="1" stop-color="#0d151c"/></linearGradient>
 <linearGradient id="fill" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#c8ff5f" stop-opacity=".22"/><stop offset="1" stop-color="#c8ff5f" stop-opacity=".01"/></linearGradient>
 <filter id="glow" x="-100%" y="-100%" width="300%" height="300%"><feGaussianBlur stdDeviation="3"/></filter></defs>
@@ -20,9 +20,9 @@
 <text x="41" y="154.0" fill="#7f91a3" font-size="15" text-anchor="end">20</text>
 <path d="M54 112.00H568" stroke="#26313b" stroke-dasharray="3 6"/>
 <text x="41" y="117.0" fill="#7f91a3" font-size="15" text-anchor="end">25</text>
-<path d="M54.00 297.00 L96.83 200.80 L139.67 126.80 L182.50 282.20 L225.33 260.00 L268.17 297.00 L311.00 171.20 L353.83 134.20 L396.67 297.00 L439.50 297.00 L482.33 297.00 L525.17 119.40 L568.00 274.80 L568 297 L54 297Z" fill="url(#fill)"/>
-<path d="M54.00 297.00 L96.83 200.80 L139.67 126.80 L182.50 282.20 L225.33 260.00 L268.17 297.00 L311.00 171.20 L353.83 134.20 L396.67 297.00 L439.50 297.00 L482.33 297.00 L525.17 119.40 L568.00 274.80" fill="none" stroke="#c8ff5f" stroke-width="2.5" stroke-linejoin="round"/>
-<path class="trace" d="M54.00 297.00 L96.83 200.80 L139.67 126.80 L182.50 282.20 L225.33 260.00 L268.17 297.00 L311.00 171.20 L353.83 134.20 L396.67 297.00 L439.50 297.00 L482.33 297.00 L525.17 119.40 L568.00 274.80" fill="none" stroke="#fff" stroke-opacity=".65" stroke-width="2" stroke-dasharray="7 153"/>
+<path d="M54.00 297.00 L96.83 200.80 L139.67 126.80 L182.50 282.20 L225.33 260.00 L268.17 297.00 L311.00 171.20 L353.83 134.20 L396.67 297.00 L439.50 297.00 L482.33 297.00 L525.17 119.40 L568.00 267.40 L568 297 L54 297Z" fill="url(#fill)"/>
+<path d="M54.00 297.00 L96.83 200.80 L139.67 126.80 L182.50 282.20 L225.33 260.00 L268.17 297.00 L311.00 171.20 L353.83 134.20 L396.67 297.00 L439.50 297.00 L482.33 297.00 L525.17 119.40 L568.00 267.40" fill="none" stroke="#c8ff5f" stroke-width="2.5" stroke-linejoin="round"/>
+<path class="trace" d="M54.00 297.00 L96.83 200.80 L139.67 126.80 L182.50 282.20 L225.33 260.00 L268.17 297.00 L311.00 171.20 L353.83 134.20 L396.67 297.00 L439.50 297.00 L482.33 297.00 L525.17 119.40 L568.00 267.40" fill="none" stroke="#fff" stroke-opacity=".65" stroke-width="2" stroke-dasharray="7 153"/>
 <circle cx="54.00" cy="297.00" r="4" fill="#0d1117" stroke="#c8ff5f" stroke-width="2"><title>2025-10: 0 contributions</title></circle>
 <text x="54.0" y="326" fill="#a3b0bf" font-size="14" text-anchor="middle">Oct &#x27;25</text>
 <circle cx="96.83" cy="200.80" r="4" fill="#0d1117" stroke="#c8ff5f" stroke-width="2"><title>2025-11: 13 contributions</title></circle>
@@ -48,8 +48,8 @@
 <text x="482.33" y="326" fill="#a3b0bf" font-size="14" text-anchor="middle">Aug</text>
 <circle cx="525.17" cy="119.40" r="4" fill="#0d1117" stroke="#c8ff5f" stroke-width="2"><title>2026-09: 24 contributions</title></circle>
 <text x="525.17" y="106.4" fill="#c8ff5f" font-size="16" text-anchor="middle">24</text>
-<circle cx="568.00" cy="274.80" r="4" fill="#0d1117" stroke="#c8ff5f" stroke-width="2"><title>2026-10: 3 contributions</title></circle>
-<text x="568.0" y="261.8" fill="#c8ff5f" font-size="16" text-anchor="middle">3</text>
+<circle cx="568.00" cy="267.40" r="4" fill="#0d1117" stroke="#c8ff5f" stroke-width="2"><title>2026-10: 4 contributions</title></circle>
+<text x="568.0" y="254.4" fill="#c8ff5f" font-size="16" text-anchor="middle">4</text>
 <text x="568.0" y="326" fill="#a3b0bf" font-size="14" text-anchor="middle">Oct &#x27;26</text>
 <text x="28" y="368" fill="#a3b0bf" font-size="16" >Calendar months · edge months are partial</text>
 <text x="28" y="395" fill="#7f91a3" font-size="15" >Updated 2026-10-29 UTC</text>
