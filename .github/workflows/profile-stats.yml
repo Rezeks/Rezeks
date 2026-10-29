@@ -1,0 +1,55 @@
+name: Update profile statistics
+
+on:
+  schedule:
+    - cron: '17 3 * * *'
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - scripts/update_stats.py
+      - .github/workflows/profile-stats.yml
+
+# Scheduled workflows may be disabled by GitHub after 60 days of inactivity.
+# Re-enable this workflow in Actions if that happens. No personal token is needed.
+permissions:
+  contents: write
+
+concurrency:
+  group: profile-statistics
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    if: github.repository == 'Rezeks/Rezeks' && github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Check out the profile
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          ref: main
+
+      - name: Set up Python
+        uses: actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0 # v7.1.0
+        with:
+          python-version: '3.13'
+
+      - name: Render public statistics
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: python scripts/update_stats.py
+
+      - name: Commit the updated card
+        shell: bash
+        run: |
+          git add -- assets/stats.svg assets/stats-mobile.svg
+          if git diff --cached --quiet; then
+            echo "Statistics have not changed."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "chore: refresh public profile statistics"
+          git pull --rebase origin main
+          git push origin HEAD:main

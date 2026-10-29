@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="324" viewBox="0 0 960 324" fill="none" role="img" aria-labelledby="title desc">
+  <title id="title">Rezeks — web, mobile, backend</title>
+  <desc id="desc">A dark developer workspace with a lime Rezeks wordmark and an animated terminal. Interfaces. APIs. Experiments.</desc>
+  <defs>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse"><path d="M32 0H0V32" stroke="#23302c" stroke-opacity=".45"/></pattern>
+    <linearGradient id="edge" x1="0" y1="0" x2="960" y2="324" gradientUnits="userSpaceOnUse"><stop stop-color="#66863c"/><stop offset=".5" stop-color="#303b44"/><stop offset="1" stop-color="#746196"/></linearGradient>
+    <linearGradient id="beam" x1="0" y1="0" x2="960" y2="0" gradientUnits="userSpaceOnUse"><stop stop-color="#c8ff5f"/><stop offset=".65" stop-color="#c8ff5f" stop-opacity=".4"/><stop offset="1" stop-color="#b8a5ff"/></linearGradient>
+    <clipPath id="frame"><rect width="958" height="322" x="1" y="1" rx="20"/></clipPath>
+    <style>
+      text { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif; }
+      .mono { font-family: 'Cascadia Code', Consolas, 'Liberation Mono', monospace; }
+      .cursor { animation: blink 1.2s steps(1) infinite; }
+      .signal { animation: pulse 3s ease-in-out infinite; }
+      .packet { animation: travel 8s linear infinite; }
+      @keyframes blink { 0%, 55% { opacity: 1; } 56%, 100% { opacity: 0; } }
+      @keyframes pulse { 0%, 100% { opacity: .3; } 50% { opacity: .8; } }
+      @keyframes travel { from { stroke-dashoffset: 600; } to { stroke-dashoffset: 0; } }
+      @media (prefers-reduced-motion: reduce) { .cursor, .signal, .packet { animation: none; } }
+    </style>
+  </defs>
+  <rect x="1" y="1" width="958" height="322" rx="20" fill="#0d1117" stroke="url(#edge)"/>
+  <g clip-path="url(#frame)">
+    <rect x="506" y="1" width="454" height="322" fill="url(#grid)"/>
+    <circle cx="902" cy="10" r="124" fill="#c8ff5f" fill-opacity=".025"/>
+    <circle cx="902" cy="10" r="89" stroke="#c8ff5f" stroke-opacity=".08"/>
+    <circle cx="902" cy="10" r="57" stroke="#c8ff5f" stroke-opacity=".08"/>
+    <path d="M0 322H960" stroke="url(#beam)" stroke-width="3"/>
+  </g>
+  <circle cx="44" cy="39" r="4" fill="#c8ff5f"/>
+  <circle class="signal" cx="44" cy="39" r="8" stroke="#c8ff5f" stroke-opacity=".45"/>
+  <text x="60" y="44" fill="#a3b0bf" font-size="12" letter-spacing="2.2" class="mono">PERSONAL WORKSPACE</text>
+  <text x="916" y="44" fill="#7e8c99" font-size="12" text-anchor="end" class="mono">GITHUB / @REZEKS</text>
+  <text x="38" y="146" fill="#eef2f6" font-size="80" font-weight="750" letter-spacing="-4">Rezeks<tspan fill="#c8ff5f">.</tspan></text>
+  <text x="43" y="186" fill="#c4cdd6" font-size="21" letter-spacing=".2">Interfaces. APIs. Experiments.</text>
+  <g transform="translate(43 216)">
+    <rect width="66" height="27" rx="6" fill="#c8ff5f"/>
+    <text x="33" y="18" fill="#17200c" font-size="11" font-weight="700" text-anchor="middle" class="mono">WEB</text>
+    <rect x="76" width="86" height="27" rx="6" fill="#1b232e" stroke="#34404d"/>
+    <text x="119" y="18" fill="#c4cdd6" font-size="11" font-weight="600" text-anchor="middle" class="mono">MOBILE</text>
+    <rect x="172" width="96" height="27" rx="6" fill="#1b232e" stroke="#34404d"/>
+    <text x="220" y="18" fill="#c4cdd6" font-size="11" font-weight="600" text-anchor="middle" class="mono">BACKEND</text>
+  </g>
+  <g transform="translate(538 80)">
+    <rect width="378" height="166" rx="12" fill="#111820" stroke="#34404d"/>
+    <path d="M0 35H378" stroke="#29333f"/>
+    <circle cx="18" cy="18" r="4" fill="#6f7d8b"/>
+    <circle cx="32" cy="18" r="4" fill="#475461"/>
+    <circle cx="46" cy="18" r="4" fill="#34404d"/>
+    <text x="356" y="22" fill="#8f9eac" font-size="10" text-anchor="end" class="mono">rezeks@github: ~</text>
+    <text x="22" y="65" fill="#c8ff5f" font-size="14" class="mono">$ <tspan fill="#eef2f6">ls projects/</tspan></text>
+    <text x="22" y="93" fill="#b8a5ff" font-size="13" class="mono">web/    mobile/    backend/</text>
+    <text x="22" y="126" fill="#c8ff5f" font-size="14" class="mono">$ <tspan fill="#eef2f6">build. learn. repeat.</tspan></text>
+    <rect class="cursor" x="217" y="115" width="8" height="15" fill="#c8ff5f"/>
+  </g>
+  <text x="43" y="289" fill="#7e8c99" font-size="11" letter-spacing="1.5" class="mono">FROM IDEA TO REPOSITORY</text>
+  <path d="M538 284H916" stroke="#29343c"/>
+  <path class="packet" d="M538 284H916" stroke="#c8ff5f" stroke-width="2" stroke-linecap="round" stroke-dasharray="24 576"/>
+  <circle cx="538" cy="284" r="3" fill="#c8ff5f"/>
+  <circle cx="727" cy="284" r="3" fill="#b8a5ff"/>
+  <circle cx="916" cy="284" r="3" fill="#c8ff5f"/>
+</svg>

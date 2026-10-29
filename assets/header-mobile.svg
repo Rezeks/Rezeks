@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="340" viewBox="0 0 600 340" fill="none" role="img" aria-labelledby="title desc">
+  <title id="title">Rezeks — web, mobile, backend</title>
+  <desc id="desc">Interfaces. APIs. Experiments. Build, learn, repeat.</desc>
+  <defs>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse"><path d="M32 0H0V32" stroke="#23302c" stroke-opacity=".5"/></pattern>
+    <linearGradient id="edge" x1="0" y1="0" x2="600" y2="340" gradientUnits="userSpaceOnUse"><stop stop-color="#66863c"/><stop offset=".5" stop-color="#303b44"/><stop offset="1" stop-color="#746196"/></linearGradient>
+    <clipPath id="frame"><rect x="1" y="1" width="598" height="338" rx="20"/></clipPath>
+    <style>
+      text { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif; }
+      .mono { font-family: 'Cascadia Code', Consolas, 'Liberation Mono', monospace; }
+      .cursor { animation: blink 1.2s steps(1) infinite; }
+      @keyframes blink { 0%, 55% { opacity:1; } 56%,100% { opacity:0; } }
+      @media (prefers-reduced-motion: reduce) { .cursor { animation:none; } }
+    </style>
+  </defs>
+  <rect x="1" y="1" width="598" height="338" rx="20" fill="#0d1117" stroke="url(#edge)"/>
+  <g clip-path="url(#frame)">
+    <rect x="330" y="1" width="270" height="338" fill="url(#grid)"/>
+    <circle cx="564" cy="46" r="100" stroke="#c8ff5f" stroke-opacity=".1"/>
+    <circle cx="564" cy="46" r="62" stroke="#c8ff5f" stroke-opacity=".1"/>
+    <path d="M0 339H600" stroke="#c8ff5f" stroke-opacity=".7" stroke-width="2"/>
+  </g>
+  <circle cx="36" cy="36" r="4" fill="#c8ff5f"/>
+  <text x="51" y="41" fill="#a3b0bf" font-size="14" letter-spacing="2" class="mono">PERSONAL WORKSPACE</text>
+  <text x="32" y="137" fill="#eef2f6" font-size="80" font-weight="750" letter-spacing="-4">Rezeks<tspan fill="#c8ff5f">.</tspan></text>
+  <text x="36" y="177" fill="#c4cdd6" font-size="23">Interfaces. APIs. Experiments.</text>
+  <g transform="translate(36 202)">
+    <rect width="76" height="31" rx="6" fill="#c8ff5f"/>
+    <text x="38" y="21" fill="#17200c" font-size="14" font-weight="700" text-anchor="middle" class="mono">WEB</text>
+    <rect x="88" width="102" height="31" rx="6" fill="#1b232e" stroke="#34404d"/>
+    <text x="139" y="21" fill="#c4cdd6" font-size="14" text-anchor="middle" class="mono">MOBILE</text>
+    <rect x="202" width="115" height="31" rx="6" fill="#1b232e" stroke="#34404d"/>
+    <text x="259" y="21" fill="#c4cdd6" font-size="14" text-anchor="middle" class="mono">BACKEND</text>
+  </g>
+  <rect x="32" y="261" width="536" height="48" rx="9" fill="#111820" stroke="#34404d"/>
+  <text x="48" y="292" font-size="20" fill="#c8ff5f" class="mono">$ <tspan fill="#b8a5ff">build. learn. repeat.</tspan></text>
+  <rect class="cursor" x="330" y="276" width="10" height="20" fill="#c8ff5f"/>
+</svg>
