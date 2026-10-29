@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="420" viewBox="0 0 600 420" role="img" aria-labelledby="title desc">
+<title id="title">Rezeks — monthly contribution rhythm</title><desc id="desc">Calendar-month contribution totals from the public GitHub profile. 2025-10: 0; 2025-11: 13; 2025-12: 23; 2026-01: 2; 2026-02: 5; 2026-03: 0; 2026-04: 17; 2026-05: 22; 2026-06: 0; 2026-07: 0; 2026-08: 0; 2026-09: 24; 2026-10: 3. Boundary months may be partial.</desc>
+<defs><linearGradient id="surface" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#18242b"/><stop offset="1" stop-color="#0d151c"/></linearGradient>
+<linearGradient id="fill" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#c8ff5f" stop-opacity=".22"/><stop offset="1" stop-color="#c8ff5f" stop-opacity=".01"/></linearGradient>
+<filter id="glow" x="-100%" y="-100%" width="300%" height="300%"><feGaussianBlur stdDeviation="3"/></filter></defs>
+<style>.scan{animation:scan 14s linear infinite}.spark{animation:spark 5s ease-in-out infinite}.trace{animation:trace 12s linear infinite}@keyframes scan{from{stroke-dashoffset:650}to{stroke-dashoffset:0}}@keyframes spark{0%,100%{opacity:.18}50%{opacity:.55}}@keyframes trace{to{stroke-dashoffset:-320}}@media(prefers-reduced-motion:reduce){.scan,.spark,.trace{animation:none}}</style>
+<rect x=".5" y=".5" width="599" height="419" rx="20" fill="#0d1117" stroke="#2e3a40"/>
+<g font-family="Segoe UI, Helvetica, Arial, sans-serif">
+<text x="28" y="43" fill="#eef2f6" font-size="22" font-weight="650" letter-spacing="1">THE BUILDING RHYTHM</text>
+<text x="28" y="71" fill="#a3b0bf" font-size="17" >Contributions, month by month.</text>
+<path d="M54 297.00H568" stroke="#26313b" stroke-dasharray="3 6"/>
+<text x="41" y="302.0" fill="#7f91a3" font-size="15" text-anchor="end">0</text>
+<path d="M54 260.00H568" stroke="#26313b" stroke-dasharray="3 6"/>
+<text x="41" y="265.0" fill="#7f91a3" font-size="15" text-anchor="end">5</text>
+<path d="M54 223.00H568" stroke="#26313b" stroke-dasharray="3 6"/>
+<text x="41" y="228.0" fill="#7f91a3" font-size="15" text-anchor="end">10</text>
+<path d="M54 186.00H568" stroke="#26313b" stroke-dasharray="3 6"/>
+<text x="41" y="191.0" fill="#7f91a3" font-size="15" text-anchor="end">15</text>
+<path d="M54 149.00H568" stroke="#26313b" stroke-dasharray="3 6"/>
+<text x="41" y="154.0" fill="#7f91a3" font-size="15" text-anchor="end">20</text>
+<path d="M54 112.00H568" stroke="#26313b" stroke-dasharray="3 6"/>
+<text x="41" y="117.0" fill="#7f91a3" font-size="15" text-anchor="end">25</text>
+<path d="M54.00 297.00 L96.83 200.80 L139.67 126.80 L182.50 282.20 L225.33 260.00 L268.17 297.00 L311.00 171.20 L353.83 134.20 L396.67 297.00 L439.50 297.00 L482.33 297.00 L525.17 119.40 L568.00 274.80 L568 297 L54 297Z" fill="url(#fill)"/>
+<path d="M54.00 297.00 L96.83 200.80 L139.67 126.80 L182.50 282.20 L225.33 260.00 L268.17 297.00 L311.00 171.20 L353.83 134.20 L396.67 297.00 L439.50 297.00 L482.33 297.00 L525.17 119.40 L568.00 274.80" fill="none" stroke="#c8ff5f" stroke-width="2.5" stroke-linejoin="round"/>
+<path class="trace" d="M54.00 297.00 L96.83 200.80 L139.67 126.80 L182.50 282.20 L225.33 260.00 L268.17 297.00 L311.00 171.20 L353.83 134.20 L396.67 297.00 L439.50 297.00 L482.33 297.00 L525.17 119.40 L568.00 274.80" fill="none" stroke="#fff" stroke-opacity=".65" stroke-width="2" stroke-dasharray="7 153"/>
+<circle cx="54.00" cy="297.00" r="4" fill="#0d1117" stroke="#c8ff5f" stroke-width="2"><title>2025-10: 0 contributions</title></circle>
+<text x="54.0" y="326" fill="#a3b0bf" font-size="14" text-anchor="middle">Oct &#x27;25</text>
+<circle cx="96.83" cy="200.80" r="4" fill="#0d1117" stroke="#c8ff5f" stroke-width="2"><title>2025-11: 13 contributions</title></circle>
+<text x="96.83" y="187.8" fill="#c8ff5f" font-size="16" text-anchor="middle">13</text>
+<circle cx="139.67" cy="126.80" r="4" fill="#0d1117" stroke="#c8ff5f" stroke-width="2"><title>2025-12: 23 contributions</title></circle>
+<text x="139.67" y="113.8" fill="#c8ff5f" font-size="16" text-anchor="middle">23</text>
+<text x="139.67" y="326" fill="#a3b0bf" font-size="14" text-anchor="middle">Dec</text>
+<circle cx="182.50" cy="282.20" r="4" fill="#0d1117" stroke="#c8ff5f" stroke-width="2"><title>2026-01: 2 contributions</title></circle>
+<text x="182.5" y="269.2" fill="#c8ff5f" font-size="16" text-anchor="middle">2</text>
+<circle cx="225.33" cy="260.00" r="4" fill="#0d1117" stroke="#c8ff5f" stroke-width="2"><title>2026-02: 5 contributions</title></circle>
+<text x="225.33" y="247.0" fill="#c8ff5f" font-size="16" text-anchor="middle">5</text>
+<text x="225.33" y="326" fill="#a3b0bf" font-size="14" text-anchor="middle">Feb</text>
+<circle cx="268.17" cy="297.00" r="4" fill="#0d1117" stroke="#c8ff5f" stroke-width="2"><title>2026-03: 0 contributions</title></circle>
+<circle cx="311.00" cy="171.20" r="4" fill="#0d1117" stroke="#c8ff5f" stroke-width="2"><title>2026-04: 17 contributions</title></circle>
+<text x="311.0" y="158.2" fill="#c8ff5f" font-size="16" text-anchor="middle">17</text>
+<text x="311.0" y="326" fill="#a3b0bf" font-size="14" text-anchor="middle">Apr</text>
+<circle cx="353.83" cy="134.20" r="4" fill="#0d1117" stroke="#c8ff5f" stroke-width="2"><title>2026-05: 22 contributions</title></circle>
+<text x="353.83" y="121.2" fill="#c8ff5f" font-size="16" text-anchor="middle">22</text>
+<circle cx="396.67" cy="297.00" r="4" fill="#0d1117" stroke="#c8ff5f" stroke-width="2"><title>2026-06: 0 contributions</title></circle>
+<text x="396.67" y="326" fill="#a3b0bf" font-size="14" text-anchor="middle">Jun</text>
+<circle cx="439.50" cy="297.00" r="4" fill="#0d1117" stroke="#c8ff5f" stroke-width="2"><title>2026-07: 0 contributions</title></circle>
+<circle cx="482.33" cy="297.00" r="4" fill="#0d1117" stroke="#c8ff5f" stroke-width="2"><title>2026-08: 0 contributions</title></circle>
+<text x="482.33" y="326" fill="#a3b0bf" font-size="14" text-anchor="middle">Aug</text>
+<circle cx="525.17" cy="119.40" r="4" fill="#0d1117" stroke="#c8ff5f" stroke-width="2"><title>2026-09: 24 contributions</title></circle>
+<text x="525.17" y="106.4" fill="#c8ff5f" font-size="16" text-anchor="middle">24</text>
+<circle cx="568.00" cy="274.80" r="4" fill="#0d1117" stroke="#c8ff5f" stroke-width="2"><title>2026-10: 3 contributions</title></circle>
+<text x="568.0" y="261.8" fill="#c8ff5f" font-size="16" text-anchor="middle">3</text>
+<text x="568.0" y="326" fill="#a3b0bf" font-size="14" text-anchor="middle">Oct &#x27;26</text>
+<text x="28" y="368" fill="#a3b0bf" font-size="16" >Calendar months · edge months are partial</text>
+<text x="28" y="395" fill="#7f91a3" font-size="15" >Updated 2026-10-29 UTC</text>
+</g>
+</svg>

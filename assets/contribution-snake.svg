@@ -1,0 +1,479 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="300" viewBox="0 0 960 300" role="img" aria-labelledby="title desc">
+<title id="title">Rezeks — contribution snake</title>
+<desc id="desc">Animated view of the public contribution calendar from 2025-10-26 to 2026-10-29. 109 contributions on 27 active days. The snake visits every day, eats the colored squares, and returns outside the calendar as the board resets. This is a decorative traversal, not the chronological order of contributions.</desc>
+<defs><filter id="glow" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="1.3"/></filter></defs>
+<style>text{font-family:'Segoe UI',Arial,sans-serif}
+.mono{font-family:Consolas,'Liberation Mono',monospace}
+.food{animation-duration:46s;animation-timing-function:linear;animation-iteration-count:infinite}
+.snake-tail{fill:none;stroke-linecap:round;stroke-linejoin:round;animation-duration:46s;animation-timing-function:linear;animation-iteration-count:infinite}
+.signal{animation:pulse 2.8s ease-in-out infinite}
+@keyframes pulse{0%,100%{opacity:.35}50%{opacity:1}}
+@keyframes eat6{0%,73.1166%{opacity:1}73.1566%,94%{opacity:0}98%,100%{opacity:1}}
+@keyframes eat10{0%,48.2778%{opacity:1}48.3178%,94%{opacity:0}98%,100%{opacity:1}}
+@keyframes eat15{0%,23.6689%{opacity:1}23.7089%,94%{opacity:0}98%,100%{opacity:1}}
+@keyframes eat17{0%,48.0478%{opacity:1}48.0878%,94%{opacity:0}98%,100%{opacity:1}}
+@keyframes eat23{0%,25.0488%{opacity:1}25.0888%,94%{opacity:0}98%,100%{opacity:1}}
+@keyframes eat24{0%,47.8178%{opacity:1}47.8578%,94%{opacity:0}98%,100%{opacity:1}}
+@keyframes eat31{0%,47.5878%{opacity:1}47.6278%,94%{opacity:0}98%,100%{opacity:1}}
+@keyframes eat38{0%,47.3578%{opacity:1}47.3978%,94%{opacity:0}98%,100%{opacity:1}}
+@keyframes eat39{0%,49.8877%{opacity:1}49.9277%,94%{opacity:0}98%,100%{opacity:1}}
+@keyframes eat42{0%,1.3599%{opacity:1}1.3999%,94%{opacity:0}98%,100%{opacity:1}}
+@keyframes eat43{0%,22.7489%{opacity:1}22.7889%,94%{opacity:0}98%,100%{opacity:1}}
+@keyframes eat45{0%,47.1278%{opacity:1}47.1678%,94%{opacity:0}98%,100%{opacity:1}}
+@keyframes eat57{0%,22.2890%{opacity:1}22.3290%,94%{opacity:0}98%,100%{opacity:1}}
+@keyframes eat59{0%,46.6678%{opacity:1}46.7078%,94%{opacity:0}98%,100%{opacity:1}}
+@keyframes eat60{0%,50.5777%{opacity:1}50.6177%,94%{opacity:0}98%,100%{opacity:1}}
+@keyframes eat94{0%,45.5179%{opacity:1}45.5579%,94%{opacity:0}98%,100%{opacity:1}}
+@keyframes eat107{0%,27.8087%{opacity:1}27.8487%,94%{opacity:0}98%,100%{opacity:1}}
+@keyframes eat181{0%,78.8663%{opacity:1}78.9063%,94%{opacity:0}98%,100%{opacity:1}}
+@keyframes eat185{0%,42.5280%{opacity:1}42.5680%,94%{opacity:0}98%,100%{opacity:1}}
+@keyframes eat187{0%,66.9069%{opacity:1}66.9469%,94%{opacity:0}98%,100%{opacity:1}}
+@keyframes eat189{0%,6.1897%{opacity:1}6.2297%,94%{opacity:0}98%,100%{opacity:1}}
+@keyframes eat190{0%,17.9192%{opacity:1}17.9592%,94%{opacity:0}98%,100%{opacity:1}}
+@keyframes eat191{0%,30.5686%{opacity:1}30.6086%,94%{opacity:0}98%,100%{opacity:1}}
+@keyframes eat313{0%,62.7671%{opacity:1}62.8071%,94%{opacity:0}98%,100%{opacity:1}}
+@keyframes eat319{0%,59.0873%{opacity:1}59.1273%,94%{opacity:0}98%,100%{opacity:1}}
+@keyframes eat332{0%,37.6983%{opacity:1}37.7383%,94%{opacity:0}98%,100%{opacity:1}}
+@keyframes eat368{0%,60.6972%{opacity:1}60.7372%,94%{opacity:0}98%,100%{opacity:1}}
+@keyframes tail{from{stroke-dashoffset:78}to{stroke-dashoffset:-6878.8444}}
+@keyframes middle{from{stroke-dashoffset:53}to{stroke-dashoffset:-6903.8444}}
+@keyframes body{from{stroke-dashoffset:31}to{stroke-dashoffset:-6925.8444}}
+@media(prefers-reduced-motion:reduce){.snake{display:none}.food{animation:none!important;opacity:1!important}.signal{animation:none}}</style>
+<rect x=".5" y=".5" width="959" height="299" rx="20" fill="#0d1117" stroke="#303a44"/>
+<text x="36" y="39" fill="#eef2f6" font-size="24" font-weight="650">Contribution snake.</text>
+<text x="36" y="65" fill="#a3b0bf" font-size="13">A year of activity. One square at a time.</text>
+<circle class="signal" cx="812" cy="34" r="4" fill="#c8ff5f"/>
+<text x="827" y="38" fill="#c8ff5f" font-size="11" letter-spacing="1.4" class="mono">AUTO / LOOP</text>
+<text x="924" y="65" text-anchor="end" fill="#b8a5ff" font-size="13">109 contributions · 27 active days</text>
+<text x="40" y="137" fill="#687886" font-size="10" text-anchor="middle" class="mono">M</text>
+<text x="40" y="169" fill="#687886" font-size="10" text-anchor="middle" class="mono">W</text>
+<text x="40" y="201" fill="#687886" font-size="10" text-anchor="middle" class="mono">F</text>
+<text x="62.00" y="96" fill="#a3b0bf" font-size="11" class="mono">Nov</text>
+<text x="142.00" y="96" fill="#a3b0bf" font-size="11" class="mono">Dec</text>
+<text x="206.00" y="96" fill="#a3b0bf" font-size="11" class="mono">Jan</text>
+<text x="286.00" y="96" fill="#a3b0bf" font-size="11" class="mono">Feb</text>
+<text x="350.00" y="96" fill="#a3b0bf" font-size="11" class="mono">Mar</text>
+<text x="414.00" y="96" fill="#a3b0bf" font-size="11" class="mono">Apr</text>
+<text x="478.00" y="96" fill="#a3b0bf" font-size="11" class="mono">May</text>
+<text x="558.00" y="96" fill="#a3b0bf" font-size="11" class="mono">Jun</text>
+<text x="622.00" y="96" fill="#a3b0bf" font-size="11" class="mono">Jul</text>
+<text x="686.00" y="96" fill="#a3b0bf" font-size="11" class="mono">Aug</text>
+<text x="766.00" y="96" fill="#a3b0bf" font-size="11" class="mono">Sep</text>
+<text x="830.00" y="96" fill="#a3b0bf" font-size="11" class="mono">Oct</text>
+<rect x="62.00" y="111.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="62.00" y="127.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="62.00" y="143.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="62.00" y="159.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="62.00" y="175.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="62.00" y="191.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="62.00" y="207.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="78.00" y="111.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="78.00" y="127.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="78.00" y="143.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="78.00" y="159.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="78.00" y="175.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="78.00" y="191.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="78.00" y="207.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="94.00" y="111.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="94.00" y="127.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="94.00" y="143.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="94.00" y="159.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="94.00" y="175.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="94.00" y="191.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="94.00" y="207.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="110.00" y="111.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="110.00" y="127.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="110.00" y="143.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="110.00" y="159.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="110.00" y="175.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="110.00" y="191.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="110.00" y="207.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="126.00" y="111.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="126.00" y="127.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="126.00" y="143.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="126.00" y="159.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="126.00" y="175.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="126.00" y="191.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="126.00" y="207.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="142.00" y="111.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="142.00" y="127.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="142.00" y="143.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="142.00" y="159.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="142.00" y="175.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="142.00" y="191.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="142.00" y="207.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="158.00" y="111.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="158.00" y="127.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="158.00" y="143.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="158.00" y="159.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="158.00" y="175.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="158.00" y="191.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="158.00" y="207.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="174.00" y="111.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="174.00" y="127.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="174.00" y="143.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="174.00" y="159.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="174.00" y="175.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="174.00" y="191.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="174.00" y="207.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="190.00" y="111.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="190.00" y="127.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="190.00" y="143.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="190.00" y="159.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="190.00" y="175.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="190.00" y="191.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="190.00" y="207.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="206.00" y="111.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="206.00" y="127.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="206.00" y="143.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="206.00" y="159.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="206.00" y="175.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="206.00" y="191.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="206.00" y="207.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="222.00" y="111.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="222.00" y="127.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="222.00" y="143.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="222.00" y="159.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="222.00" y="175.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="222.00" y="191.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="222.00" y="207.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="238.00" y="111.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="238.00" y="127.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="238.00" y="143.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="238.00" y="159.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="238.00" y="175.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="238.00" y="191.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="238.00" y="207.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="254.00" y="111.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="254.00" y="127.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="254.00" y="143.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="254.00" y="159.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="254.00" y="175.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="254.00" y="191.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="254.00" y="207.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="270.00" y="111.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="270.00" y="127.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="270.00" y="143.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="270.00" y="159.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="270.00" y="175.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="270.00" y="191.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="270.00" y="207.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="286.00" y="111.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="286.00" y="127.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="286.00" y="143.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="286.00" y="159.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="286.00" y="175.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="286.00" y="191.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="286.00" y="207.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="302.00" y="111.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="302.00" y="127.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="302.00" y="143.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="302.00" y="159.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="302.00" y="175.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="302.00" y="191.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="302.00" y="207.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="318.00" y="111.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="318.00" y="127.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="318.00" y="143.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="318.00" y="159.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="318.00" y="175.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="318.00" y="191.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="318.00" y="207.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="334.00" y="111.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="334.00" y="127.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="334.00" y="143.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="334.00" y="159.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="334.00" y="175.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="334.00" y="191.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="334.00" y="207.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="350.00" y="111.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="350.00" y="127.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="350.00" y="143.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="350.00" y="159.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="350.00" y="175.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="350.00" y="191.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="350.00" y="207.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="366.00" y="111.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="366.00" y="127.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="366.00" y="143.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="366.00" y="159.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="366.00" y="175.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="366.00" y="191.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="366.00" y="207.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="382.00" y="111.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="382.00" y="127.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="382.00" y="143.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="382.00" y="159.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="382.00" y="175.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="382.00" y="191.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="382.00" y="207.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="398.00" y="111.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="398.00" y="127.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="398.00" y="143.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="398.00" y="159.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="398.00" y="175.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="398.00" y="191.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="398.00" y="207.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="414.00" y="111.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="414.00" y="127.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="414.00" y="143.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="414.00" y="159.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="414.00" y="175.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="414.00" y="191.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="414.00" y="207.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="430.00" y="111.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="430.00" y="127.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="430.00" y="143.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="430.00" y="159.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="430.00" y="175.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="430.00" y="191.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="430.00" y="207.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="446.00" y="111.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="446.00" y="127.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="446.00" y="143.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="446.00" y="159.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="446.00" y="175.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="446.00" y="191.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="446.00" y="207.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="462.00" y="111.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="462.00" y="127.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="462.00" y="143.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="462.00" y="159.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="462.00" y="175.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="462.00" y="191.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="462.00" y="207.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="478.00" y="111.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="478.00" y="127.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="478.00" y="143.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="478.00" y="159.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="478.00" y="175.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="478.00" y="191.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="478.00" y="207.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="494.00" y="111.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="494.00" y="127.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="494.00" y="143.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="494.00" y="159.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="494.00" y="175.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="494.00" y="191.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="494.00" y="207.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="510.00" y="111.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="510.00" y="127.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="510.00" y="143.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="510.00" y="159.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="510.00" y="175.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="510.00" y="191.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="510.00" y="207.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="526.00" y="111.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="526.00" y="127.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="526.00" y="143.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="526.00" y="159.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="526.00" y="175.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="526.00" y="191.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="526.00" y="207.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="542.00" y="111.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="542.00" y="127.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="542.00" y="143.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="542.00" y="159.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="542.00" y="175.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="542.00" y="191.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="542.00" y="207.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="558.00" y="111.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="558.00" y="127.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="558.00" y="143.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="558.00" y="159.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="558.00" y="175.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="558.00" y="191.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="558.00" y="207.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="574.00" y="111.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="574.00" y="127.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="574.00" y="143.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="574.00" y="159.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="574.00" y="175.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="574.00" y="191.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="574.00" y="207.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="590.00" y="111.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="590.00" y="127.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="590.00" y="143.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="590.00" y="159.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="590.00" y="175.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="590.00" y="191.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="590.00" y="207.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="606.00" y="111.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="606.00" y="127.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="606.00" y="143.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="606.00" y="159.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="606.00" y="175.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="606.00" y="191.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="606.00" y="207.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="622.00" y="111.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="622.00" y="127.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="622.00" y="143.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="622.00" y="159.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="622.00" y="175.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="622.00" y="191.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="622.00" y="207.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="638.00" y="111.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="638.00" y="127.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="638.00" y="143.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="638.00" y="159.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="638.00" y="175.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="638.00" y="191.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="638.00" y="207.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="654.00" y="111.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="654.00" y="127.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="654.00" y="143.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="654.00" y="159.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="654.00" y="175.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="654.00" y="191.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="654.00" y="207.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="670.00" y="111.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="670.00" y="127.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="670.00" y="143.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="670.00" y="159.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="670.00" y="175.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="670.00" y="191.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="670.00" y="207.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="686.00" y="111.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="686.00" y="127.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="686.00" y="143.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="686.00" y="159.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="686.00" y="175.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="686.00" y="191.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="686.00" y="207.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="702.00" y="111.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="702.00" y="127.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="702.00" y="143.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="702.00" y="159.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="702.00" y="175.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="702.00" y="191.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="702.00" y="207.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="718.00" y="111.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="718.00" y="127.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="718.00" y="143.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="718.00" y="159.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="718.00" y="175.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="718.00" y="191.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="718.00" y="207.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="734.00" y="111.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="734.00" y="127.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="734.00" y="143.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="734.00" y="159.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="734.00" y="175.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="734.00" y="191.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="734.00" y="207.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="750.00" y="111.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="750.00" y="127.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="750.00" y="143.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="750.00" y="159.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="750.00" y="175.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="750.00" y="191.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="750.00" y="207.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="766.00" y="111.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="766.00" y="127.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="766.00" y="143.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="766.00" y="159.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="766.00" y="175.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="766.00" y="191.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="766.00" y="207.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="782.00" y="111.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="782.00" y="127.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="782.00" y="143.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="782.00" y="159.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="782.00" y="175.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="782.00" y="191.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="782.00" y="207.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="798.00" y="111.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="798.00" y="127.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="798.00" y="143.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="798.00" y="159.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="798.00" y="175.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="798.00" y="191.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="798.00" y="207.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="814.00" y="111.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="814.00" y="127.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="814.00" y="143.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="814.00" y="159.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="814.00" y="175.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="814.00" y="191.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="814.00" y="207.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="830.00" y="111.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="830.00" y="127.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="830.00" y="143.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="830.00" y="159.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="830.00" y="175.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="830.00" y="191.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="830.00" y="207.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="846.00" y="111.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="846.00" y="127.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="846.00" y="143.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="846.00" y="159.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="846.00" y="175.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="846.00" y="191.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="846.00" y="207.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="862.00" y="111.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="862.00" y="127.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="862.00" y="143.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="862.00" y="159.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="862.00" y="175.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="862.00" y="191.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="862.00" y="207.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="878.00" y="111.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="878.00" y="127.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="878.00" y="143.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="878.00" y="159.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="878.00" y="175.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="878.00" y="191.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="878.00" y="207.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="894.00" y="111.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="894.00" y="127.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="894.00" y="143.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="894.00" y="159.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="894.00" y="175.00" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="894.00" y="191.00" width="12" height="12" rx="3" fill="#111820"/>
+<rect x="894.00" y="207.00" width="12" height="12" rx="3" fill="#111820"/>
+<rect class="food" x="62.00" y="207.00" width="12" height="12" rx="3" fill="#38583c" style="animation-name:eat6"><title>2025-11-01: 1 contributions</title></rect>
+<rect class="food" x="78.00" y="159.00" width="12" height="12" rx="3" fill="#638a41" style="animation-name:eat10"><title>2025-11-05: 7 contributions</title></rect>
+<rect class="food" x="94.00" y="127.00" width="12" height="12" rx="3" fill="#38583c" style="animation-name:eat15"><title>2025-11-10: 1 contributions</title></rect>
+<rect class="food" x="94.00" y="159.00" width="12" height="12" rx="3" fill="#38583c" style="animation-name:eat17"><title>2025-11-12: 1 contributions</title></rect>
+<rect class="food" x="110.00" y="143.00" width="12" height="12" rx="3" fill="#38583c" style="animation-name:eat23"><title>2025-11-18: 1 contributions</title></rect>
+<rect class="food" x="110.00" y="159.00" width="12" height="12" rx="3" fill="#38583c" style="animation-name:eat24"><title>2025-11-19: 1 contributions</title></rect>
+<rect class="food" x="126.00" y="159.00" width="12" height="12" rx="3" fill="#38583c" style="animation-name:eat31"><title>2025-11-26: 1 contributions</title></rect>
+<rect class="food" x="142.00" y="159.00" width="12" height="12" rx="3" fill="#38583c" style="animation-name:eat38"><title>2025-12-03: 3 contributions</title></rect>
+<rect class="food" x="142.00" y="175.00" width="12" height="12" rx="3" fill="#38583c" style="animation-name:eat39"><title>2025-12-04: 2 contributions</title></rect>
+<rect class="food" x="158.00" y="111.00" width="12" height="12" rx="3" fill="#38583c" style="animation-name:eat42"><title>2025-12-07: 2 contributions</title></rect>
+<rect class="food" x="158.00" y="127.00" width="12" height="12" rx="3" fill="#38583c" style="animation-name:eat43"><title>2025-12-08: 1 contributions</title></rect>
+<rect class="food" x="158.00" y="159.00" width="12" height="12" rx="3" fill="#38583c" style="animation-name:eat45"><title>2025-12-10: 2 contributions</title></rect>
+<rect class="food" x="190.00" y="127.00" width="12" height="12" rx="3" fill="#38583c" style="animation-name:eat57"><title>2025-12-22: 1 contributions</title></rect>
+<rect class="food" x="190.00" y="159.00" width="12" height="12" rx="3" fill="#38583c" style="animation-name:eat59"><title>2025-12-24: 1 contributions</title></rect>
+<rect class="food" x="190.00" y="175.00" width="12" height="12" rx="3" fill="#93be49" style="animation-name:eat60"><title>2025-12-25: 11 contributions</title></rect>
+<rect class="food" x="270.00" y="159.00" width="12" height="12" rx="3" fill="#38583c" style="animation-name:eat94"><title>2026-01-28: 2 contributions</title></rect>
+<rect class="food" x="302.00" y="143.00" width="12" height="12" rx="3" fill="#638a41" style="animation-name:eat107"><title>2026-02-10: 5 contributions</title></rect>
+<rect class="food" x="462.00" y="207.00" width="12" height="12" rx="3" fill="#638a41" style="animation-name:eat181"><title>2026-04-25: 8 contributions</title></rect>
+<rect class="food" x="478.00" y="159.00" width="12" height="12" rx="3" fill="#638a41" style="animation-name:eat185"><title>2026-04-29: 9 contributions</title></rect>
+<rect class="food" x="478.00" y="191.00" width="12" height="12" rx="3" fill="#638a41" style="animation-name:eat187"><title>2026-05-01: 9 contributions</title></rect>
+<rect class="food" x="494.00" y="111.00" width="12" height="12" rx="3" fill="#638a41" style="animation-name:eat189"><title>2026-05-03: 9 contributions</title></rect>
+<rect class="food" x="494.00" y="127.00" width="12" height="12" rx="3" fill="#38583c" style="animation-name:eat190"><title>2026-05-04: 3 contributions</title></rect>
+<rect class="food" x="494.00" y="143.00" width="12" height="12" rx="3" fill="#38583c" style="animation-name:eat191"><title>2026-05-05: 1 contributions</title></rect>
+<rect class="food" x="766.00" y="191.00" width="12" height="12" rx="3" fill="#38583c" style="animation-name:eat313"><title>2026-09-04: 4 contributions</title></rect>
+<rect class="food" x="782.00" y="175.00" width="12" height="12" rx="3" fill="#38583c" style="animation-name:eat319"><title>2026-09-10: 1 contributions</title></rect>
+<rect class="food" x="814.00" y="159.00" width="12" height="12" rx="3" fill="#c8ff5f" style="animation-name:eat332"><title>2026-09-23: 19 contributions</title></rect>
+<rect class="food" x="894.00" y="175.00" width="12" height="12" rx="3" fill="#38583c" style="animation-name:eat368"><title>2026-10-29: 3 contributions</title></rect>
+<g class="snake">
+<path class="snake-tail" d="M68.00,117.00 L84.00,117.00 L100.00,117.00 L116.00,117.00 L132.00,117.00 L148.00,117.00 L164.00,117.00 L180.00,117.00 L196.00,117.00 L212.00,117.00 L228.00,117.00 L244.00,117.00 L260.00,117.00 L276.00,117.00 L292.00,117.00 L308.00,117.00 L324.00,117.00 L340.00,117.00 L356.00,117.00 L372.00,117.00 L388.00,117.00 L404.00,117.00 L420.00,117.00 L436.00,117.00 L452.00,117.00 L468.00,117.00 L484.00,117.00 L500.00,117.00 L516.00,117.00 L532.00,117.00 L548.00,117.00 L564.00,117.00 L580.00,117.00 L596.00,117.00 L612.00,117.00 L628.00,117.00 L644.00,117.00 L660.00,117.00 L676.00,117.00 L692.00,117.00 L708.00,117.00 L724.00,117.00 L740.00,117.00 L756.00,117.00 L772.00,117.00 L788.00,117.00 L804.00,117.00 L820.00,117.00 L836.00,117.00 L852.00,117.00 L868.00,117.00 L884.00,117.00 L900.00,117.00 L900.00,133.00 L884.00,133.00 L868.00,133.00 L852.00,133.00 L836.00,133.00 L820.00,133.00 L804.00,133.00 L788.00,133.00 L772.00,133.00 L756.00,133.00 L740.00,133.00 L724.00,133.00 L708.00,133.00 L692.00,133.00 L676.00,133.00 L660.00,133.00 L644.00,133.00 L628.00,133.00 L612.00,133.00 L596.00,133.00 L580.00,133.00 L564.00,133.00 L548.00,133.00 L532.00,133.00 L516.00,133.00 L500.00,133.00 L484.00,133.00 L468.00,133.00 L452.00,133.00 L436.00,133.00 L420.00,133.00 L404.00,133.00 L388.00,133.00 L372.00,133.00 L356.00,133.00 L340.00,133.00 L324.00,133.00 L308.00,133.00 L292.00,133.00 L276.00,133.00 L260.00,133.00 L244.00,133.00 L228.00,133.00 L212.00,133.00 L196.00,133.00 L180.00,133.00 L164.00,133.00 L148.00,133.00 L132.00,133.00 L116.00,133.00 L100.00,133.00 L84.00,133.00 L68.00,133.00 L68.00,149.00 L84.00,149.00 L100.00,149.00 L116.00,149.00 L132.00,149.00 L148.00,149.00 L164.00,149.00 L180.00,149.00 L196.00,149.00 L212.00,149.00 L228.00,149.00 L244.00,149.00 L260.00,149.00 L276.00,149.00 L292.00,149.00 L308.00,149.00 L324.00,149.00 L340.00,149.00 L356.00,149.00 L372.00,149.00 L388.00,149.00 L404.00,149.00 L420.00,149.00 L436.00,149.00 L452.00,149.00 L468.00,149.00 L484.00,149.00 L500.00,149.00 L516.00,149.00 L532.00,149.00 L548.00,149.00 L564.00,149.00 L580.00,149.00 L596.00,149.00 L612.00,149.00 L628.00,149.00 L644.00,149.00 L660.00,149.00 L676.00,149.00 L692.00,149.00 L708.00,149.00 L724.00,149.00 L740.00,149.00 L756.00,149.00 L772.00,149.00 L788.00,149.00 L804.00,149.00 L820.00,149.00 L836.00,149.00 L852.00,149.00 L868.00,149.00 L884.00,149.00 L900.00,149.00 L900.00,165.00 L884.00,165.00 L868.00,165.00 L852.00,165.00 L836.00,165.00 L820.00,165.00 L804.00,165.00 L788.00,165.00 L772.00,165.00 L756.00,165.00 L740.00,165.00 L724.00,165.00 L708.00,165.00 L692.00,165.00 L676.00,165.00 L660.00,165.00 L644.00,165.00 L628.00,165.00 L612.00,165.00 L596.00,165.00 L580.00,165.00 L564.00,165.00 L548.00,165.00 L532.00,165.00 L516.00,165.00 L500.00,165.00 L484.00,165.00 L468.00,165.00 L452.00,165.00 L436.00,165.00 L420.00,165.00 L404.00,165.00 L388.00,165.00 L372.00,165.00 L356.00,165.00 L340.00,165.00 L324.00,165.00 L308.00,165.00 L292.00,165.00 L276.00,165.00 L260.00,165.00 L244.00,165.00 L228.00,165.00 L212.00,165.00 L196.00,165.00 L180.00,165.00 L164.00,165.00 L148.00,165.00 L132.00,165.00 L116.00,165.00 L100.00,165.00 L84.00,165.00 L68.00,165.00 L68.00,181.00 L84.00,181.00 L100.00,181.00 L116.00,181.00 L132.00,181.00 L148.00,181.00 L164.00,181.00 L180.00,181.00 L196.00,181.00 L212.00,181.00 L228.00,181.00 L244.00,181.00 L260.00,181.00 L276.00,181.00 L292.00,181.00 L308.00,181.00 L324.00,181.00 L340.00,181.00 L356.00,181.00 L372.00,181.00 L388.00,181.00 L404.00,181.00 L420.00,181.00 L436.00,181.00 L452.00,181.00 L468.00,181.00 L484.00,181.00 L500.00,181.00 L516.00,181.00 L532.00,181.00 L548.00,181.00 L564.00,181.00 L580.00,181.00 L596.00,181.00 L612.00,181.00 L628.00,181.00 L644.00,181.00 L660.00,181.00 L676.00,181.00 L692.00,181.00 L708.00,181.00 L724.00,181.00 L740.00,181.00 L756.00,181.00 L772.00,181.00 L788.00,181.00 L804.00,181.00 L820.00,181.00 L836.00,181.00 L852.00,181.00 L868.00,181.00 L884.00,181.00 L900.00,181.00 L900.00,197.00 L884.00,197.00 L868.00,197.00 L852.00,197.00 L836.00,197.00 L820.00,197.00 L804.00,197.00 L788.00,197.00 L772.00,197.00 L756.00,197.00 L740.00,197.00 L724.00,197.00 L708.00,197.00 L692.00,197.00 L676.00,197.00 L660.00,197.00 L644.00,197.00 L628.00,197.00 L612.00,197.00 L596.00,197.00 L580.00,197.00 L564.00,197.00 L548.00,197.00 L532.00,197.00 L516.00,197.00 L500.00,197.00 L484.00,197.00 L468.00,197.00 L452.00,197.00 L436.00,197.00 L420.00,197.00 L404.00,197.00 L388.00,197.00 L372.00,197.00 L356.00,197.00 L340.00,197.00 L324.00,197.00 L308.00,197.00 L292.00,197.00 L276.00,197.00 L260.00,197.00 L244.00,197.00 L228.00,197.00 L212.00,197.00 L196.00,197.00 L180.00,197.00 L164.00,197.00 L148.00,197.00 L132.00,197.00 L116.00,197.00 L100.00,197.00 L84.00,197.00 L68.00,197.00 L68.00,213.00 L84.00,213.00 L100.00,213.00 L116.00,213.00 L132.00,213.00 L148.00,213.00 L164.00,213.00 L180.00,213.00 L196.00,213.00 L212.00,213.00 L228.00,213.00 L244.00,213.00 L260.00,213.00 L276.00,213.00 L292.00,213.00 L308.00,213.00 L324.00,213.00 L340.00,213.00 L356.00,213.00 L372.00,213.00 L388.00,213.00 L404.00,213.00 L420.00,213.00 L436.00,213.00 L452.00,213.00 L468.00,213.00 L484.00,213.00 L500.00,213.00 L516.00,213.00 L532.00,213.00 L548.00,213.00 L564.00,213.00 L580.00,213.00 L596.00,213.00 L612.00,213.00 L628.00,213.00 L644.00,213.00 L660.00,213.00 L676.00,213.00 L692.00,213.00 L708.00,213.00 L724.00,213.00 L740.00,213.00 L756.00,213.00 L772.00,213.00 L788.00,213.00 L804.00,213.00 L820.00,213.00 L836.00,213.00 L852.00,213.00 L868.00,213.00 L884.00,213.00 L900.00,213.00 L916.00,237.00 L48.00,237.00 L48.00,117.00 L68.00,117.00 Z" stroke="#b8a5ff" stroke-width="7" stroke-dasharray="78 6878.8444" stroke-dashoffset="78" style="animation-name:tail"/>
+<path class="snake-tail" d="M68.00,117.00 L84.00,117.00 L100.00,117.00 L116.00,117.00 L132.00,117.00 L148.00,117.00 L164.00,117.00 L180.00,117.00 L196.00,117.00 L212.00,117.00 L228.00,117.00 L244.00,117.00 L260.00,117.00 L276.00,117.00 L292.00,117.00 L308.00,117.00 L324.00,117.00 L340.00,117.00 L356.00,117.00 L372.00,117.00 L388.00,117.00 L404.00,117.00 L420.00,117.00 L436.00,117.00 L452.00,117.00 L468.00,117.00 L484.00,117.00 L500.00,117.00 L516.00,117.00 L532.00,117.00 L548.00,117.00 L564.00,117.00 L580.00,117.00 L596.00,117.00 L612.00,117.00 L628.00,117.00 L644.00,117.00 L660.00,117.00 L676.00,117.00 L692.00,117.00 L708.00,117.00 L724.00,117.00 L740.00,117.00 L756.00,117.00 L772.00,117.00 L788.00,117.00 L804.00,117.00 L820.00,117.00 L836.00,117.00 L852.00,117.00 L868.00,117.00 L884.00,117.00 L900.00,117.00 L900.00,133.00 L884.00,133.00 L868.00,133.00 L852.00,133.00 L836.00,133.00 L820.00,133.00 L804.00,133.00 L788.00,133.00 L772.00,133.00 L756.00,133.00 L740.00,133.00 L724.00,133.00 L708.00,133.00 L692.00,133.00 L676.00,133.00 L660.00,133.00 L644.00,133.00 L628.00,133.00 L612.00,133.00 L596.00,133.00 L580.00,133.00 L564.00,133.00 L548.00,133.00 L532.00,133.00 L516.00,133.00 L500.00,133.00 L484.00,133.00 L468.00,133.00 L452.00,133.00 L436.00,133.00 L420.00,133.00 L404.00,133.00 L388.00,133.00 L372.00,133.00 L356.00,133.00 L340.00,133.00 L324.00,133.00 L308.00,133.00 L292.00,133.00 L276.00,133.00 L260.00,133.00 L244.00,133.00 L228.00,133.00 L212.00,133.00 L196.00,133.00 L180.00,133.00 L164.00,133.00 L148.00,133.00 L132.00,133.00 L116.00,133.00 L100.00,133.00 L84.00,133.00 L68.00,133.00 L68.00,149.00 L84.00,149.00 L100.00,149.00 L116.00,149.00 L132.00,149.00 L148.00,149.00 L164.00,149.00 L180.00,149.00 L196.00,149.00 L212.00,149.00 L228.00,149.00 L244.00,149.00 L260.00,149.00 L276.00,149.00 L292.00,149.00 L308.00,149.00 L324.00,149.00 L340.00,149.00 L356.00,149.00 L372.00,149.00 L388.00,149.00 L404.00,149.00 L420.00,149.00 L436.00,149.00 L452.00,149.00 L468.00,149.00 L484.00,149.00 L500.00,149.00 L516.00,149.00 L532.00,149.00 L548.00,149.00 L564.00,149.00 L580.00,149.00 L596.00,149.00 L612.00,149.00 L628.00,149.00 L644.00,149.00 L660.00,149.00 L676.00,149.00 L692.00,149.00 L708.00,149.00 L724.00,149.00 L740.00,149.00 L756.00,149.00 L772.00,149.00 L788.00,149.00 L804.00,149.00 L820.00,149.00 L836.00,149.00 L852.00,149.00 L868.00,149.00 L884.00,149.00 L900.00,149.00 L900.00,165.00 L884.00,165.00 L868.00,165.00 L852.00,165.00 L836.00,165.00 L820.00,165.00 L804.00,165.00 L788.00,165.00 L772.00,165.00 L756.00,165.00 L740.00,165.00 L724.00,165.00 L708.00,165.00 L692.00,165.00 L676.00,165.00 L660.00,165.00 L644.00,165.00 L628.00,165.00 L612.00,165.00 L596.00,165.00 L580.00,165.00 L564.00,165.00 L548.00,165.00 L532.00,165.00 L516.00,165.00 L500.00,165.00 L484.00,165.00 L468.00,165.00 L452.00,165.00 L436.00,165.00 L420.00,165.00 L404.00,165.00 L388.00,165.00 L372.00,165.00 L356.00,165.00 L340.00,165.00 L324.00,165.00 L308.00,165.00 L292.00,165.00 L276.00,165.00 L260.00,165.00 L244.00,165.00 L228.00,165.00 L212.00,165.00 L196.00,165.00 L180.00,165.00 L164.00,165.00 L148.00,165.00 L132.00,165.00 L116.00,165.00 L100.00,165.00 L84.00,165.00 L68.00,165.00 L68.00,181.00 L84.00,181.00 L100.00,181.00 L116.00,181.00 L132.00,181.00 L148.00,181.00 L164.00,181.00 L180.00,181.00 L196.00,181.00 L212.00,181.00 L228.00,181.00 L244.00,181.00 L260.00,181.00 L276.00,181.00 L292.00,181.00 L308.00,181.00 L324.00,181.00 L340.00,181.00 L356.00,181.00 L372.00,181.00 L388.00,181.00 L404.00,181.00 L420.00,181.00 L436.00,181.00 L452.00,181.00 L468.00,181.00 L484.00,181.00 L500.00,181.00 L516.00,181.00 L532.00,181.00 L548.00,181.00 L564.00,181.00 L580.00,181.00 L596.00,181.00 L612.00,181.00 L628.00,181.00 L644.00,181.00 L660.00,181.00 L676.00,181.00 L692.00,181.00 L708.00,181.00 L724.00,181.00 L740.00,181.00 L756.00,181.00 L772.00,181.00 L788.00,181.00 L804.00,181.00 L820.00,181.00 L836.00,181.00 L852.00,181.00 L868.00,181.00 L884.00,181.00 L900.00,181.00 L900.00,197.00 L884.00,197.00 L868.00,197.00 L852.00,197.00 L836.00,197.00 L820.00,197.00 L804.00,197.00 L788.00,197.00 L772.00,197.00 L756.00,197.00 L740.00,197.00 L724.00,197.00 L708.00,197.00 L692.00,197.00 L676.00,197.00 L660.00,197.00 L644.00,197.00 L628.00,197.00 L612.00,197.00 L596.00,197.00 L580.00,197.00 L564.00,197.00 L548.00,197.00 L532.00,197.00 L516.00,197.00 L500.00,197.00 L484.00,197.00 L468.00,197.00 L452.00,197.00 L436.00,197.00 L420.00,197.00 L404.00,197.00 L388.00,197.00 L372.00,197.00 L356.00,197.00 L340.00,197.00 L324.00,197.00 L308.00,197.00 L292.00,197.00 L276.00,197.00 L260.00,197.00 L244.00,197.00 L228.00,197.00 L212.00,197.00 L196.00,197.00 L180.00,197.00 L164.00,197.00 L148.00,197.00 L132.00,197.00 L116.00,197.00 L100.00,197.00 L84.00,197.00 L68.00,197.00 L68.00,213.00 L84.00,213.00 L100.00,213.00 L116.00,213.00 L132.00,213.00 L148.00,213.00 L164.00,213.00 L180.00,213.00 L196.00,213.00 L212.00,213.00 L228.00,213.00 L244.00,213.00 L260.00,213.00 L276.00,213.00 L292.00,213.00 L308.00,213.00 L324.00,213.00 L340.00,213.00 L356.00,213.00 L372.00,213.00 L388.00,213.00 L404.00,213.00 L420.00,213.00 L436.00,213.00 L452.00,213.00 L468.00,213.00 L484.00,213.00 L500.00,213.00 L516.00,213.00 L532.00,213.00 L548.00,213.00 L564.00,213.00 L580.00,213.00 L596.00,213.00 L612.00,213.00 L628.00,213.00 L644.00,213.00 L660.00,213.00 L676.00,213.00 L692.00,213.00 L708.00,213.00 L724.00,213.00 L740.00,213.00 L756.00,213.00 L772.00,213.00 L788.00,213.00 L804.00,213.00 L820.00,213.00 L836.00,213.00 L852.00,213.00 L868.00,213.00 L884.00,213.00 L900.00,213.00 L916.00,237.00 L48.00,237.00 L48.00,117.00 L68.00,117.00 Z" stroke="#9ccf62" stroke-width="9" stroke-dasharray="53 6903.8444" stroke-dashoffset="53" style="animation-name:middle"/>
+<path class="snake-tail" d="M68.00,117.00 L84.00,117.00 L100.00,117.00 L116.00,117.00 L132.00,117.00 L148.00,117.00 L164.00,117.00 L180.00,117.00 L196.00,117.00 L212.00,117.00 L228.00,117.00 L244.00,117.00 L260.00,117.00 L276.00,117.00 L292.00,117.00 L308.00,117.00 L324.00,117.00 L340.00,117.00 L356.00,117.00 L372.00,117.00 L388.00,117.00 L404.00,117.00 L420.00,117.00 L436.00,117.00 L452.00,117.00 L468.00,117.00 L484.00,117.00 L500.00,117.00 L516.00,117.00 L532.00,117.00 L548.00,117.00 L564.00,117.00 L580.00,117.00 L596.00,117.00 L612.00,117.00 L628.00,117.00 L644.00,117.00 L660.00,117.00 L676.00,117.00 L692.00,117.00 L708.00,117.00 L724.00,117.00 L740.00,117.00 L756.00,117.00 L772.00,117.00 L788.00,117.00 L804.00,117.00 L820.00,117.00 L836.00,117.00 L852.00,117.00 L868.00,117.00 L884.00,117.00 L900.00,117.00 L900.00,133.00 L884.00,133.00 L868.00,133.00 L852.00,133.00 L836.00,133.00 L820.00,133.00 L804.00,133.00 L788.00,133.00 L772.00,133.00 L756.00,133.00 L740.00,133.00 L724.00,133.00 L708.00,133.00 L692.00,133.00 L676.00,133.00 L660.00,133.00 L644.00,133.00 L628.00,133.00 L612.00,133.00 L596.00,133.00 L580.00,133.00 L564.00,133.00 L548.00,133.00 L532.00,133.00 L516.00,133.00 L500.00,133.00 L484.00,133.00 L468.00,133.00 L452.00,133.00 L436.00,133.00 L420.00,133.00 L404.00,133.00 L388.00,133.00 L372.00,133.00 L356.00,133.00 L340.00,133.00 L324.00,133.00 L308.00,133.00 L292.00,133.00 L276.00,133.00 L260.00,133.00 L244.00,133.00 L228.00,133.00 L212.00,133.00 L196.00,133.00 L180.00,133.00 L164.00,133.00 L148.00,133.00 L132.00,133.00 L116.00,133.00 L100.00,133.00 L84.00,133.00 L68.00,133.00 L68.00,149.00 L84.00,149.00 L100.00,149.00 L116.00,149.00 L132.00,149.00 L148.00,149.00 L164.00,149.00 L180.00,149.00 L196.00,149.00 L212.00,149.00 L228.00,149.00 L244.00,149.00 L260.00,149.00 L276.00,149.00 L292.00,149.00 L308.00,149.00 L324.00,149.00 L340.00,149.00 L356.00,149.00 L372.00,149.00 L388.00,149.00 L404.00,149.00 L420.00,149.00 L436.00,149.00 L452.00,149.00 L468.00,149.00 L484.00,149.00 L500.00,149.00 L516.00,149.00 L532.00,149.00 L548.00,149.00 L564.00,149.00 L580.00,149.00 L596.00,149.00 L612.00,149.00 L628.00,149.00 L644.00,149.00 L660.00,149.00 L676.00,149.00 L692.00,149.00 L708.00,149.00 L724.00,149.00 L740.00,149.00 L756.00,149.00 L772.00,149.00 L788.00,149.00 L804.00,149.00 L820.00,149.00 L836.00,149.00 L852.00,149.00 L868.00,149.00 L884.00,149.00 L900.00,149.00 L900.00,165.00 L884.00,165.00 L868.00,165.00 L852.00,165.00 L836.00,165.00 L820.00,165.00 L804.00,165.00 L788.00,165.00 L772.00,165.00 L756.00,165.00 L740.00,165.00 L724.00,165.00 L708.00,165.00 L692.00,165.00 L676.00,165.00 L660.00,165.00 L644.00,165.00 L628.00,165.00 L612.00,165.00 L596.00,165.00 L580.00,165.00 L564.00,165.00 L548.00,165.00 L532.00,165.00 L516.00,165.00 L500.00,165.00 L484.00,165.00 L468.00,165.00 L452.00,165.00 L436.00,165.00 L420.00,165.00 L404.00,165.00 L388.00,165.00 L372.00,165.00 L356.00,165.00 L340.00,165.00 L324.00,165.00 L308.00,165.00 L292.00,165.00 L276.00,165.00 L260.00,165.00 L244.00,165.00 L228.00,165.00 L212.00,165.00 L196.00,165.00 L180.00,165.00 L164.00,165.00 L148.00,165.00 L132.00,165.00 L116.00,165.00 L100.00,165.00 L84.00,165.00 L68.00,165.00 L68.00,181.00 L84.00,181.00 L100.00,181.00 L116.00,181.00 L132.00,181.00 L148.00,181.00 L164.00,181.00 L180.00,181.00 L196.00,181.00 L212.00,181.00 L228.00,181.00 L244.00,181.00 L260.00,181.00 L276.00,181.00 L292.00,181.00 L308.00,181.00 L324.00,181.00 L340.00,181.00 L356.00,181.00 L372.00,181.00 L388.00,181.00 L404.00,181.00 L420.00,181.00 L436.00,181.00 L452.00,181.00 L468.00,181.00 L484.00,181.00 L500.00,181.00 L516.00,181.00 L532.00,181.00 L548.00,181.00 L564.00,181.00 L580.00,181.00 L596.00,181.00 L612.00,181.00 L628.00,181.00 L644.00,181.00 L660.00,181.00 L676.00,181.00 L692.00,181.00 L708.00,181.00 L724.00,181.00 L740.00,181.00 L756.00,181.00 L772.00,181.00 L788.00,181.00 L804.00,181.00 L820.00,181.00 L836.00,181.00 L852.00,181.00 L868.00,181.00 L884.00,181.00 L900.00,181.00 L900.00,197.00 L884.00,197.00 L868.00,197.00 L852.00,197.00 L836.00,197.00 L820.00,197.00 L804.00,197.00 L788.00,197.00 L772.00,197.00 L756.00,197.00 L740.00,197.00 L724.00,197.00 L708.00,197.00 L692.00,197.00 L676.00,197.00 L660.00,197.00 L644.00,197.00 L628.00,197.00 L612.00,197.00 L596.00,197.00 L580.00,197.00 L564.00,197.00 L548.00,197.00 L532.00,197.00 L516.00,197.00 L500.00,197.00 L484.00,197.00 L468.00,197.00 L452.00,197.00 L436.00,197.00 L420.00,197.00 L404.00,197.00 L388.00,197.00 L372.00,197.00 L356.00,197.00 L340.00,197.00 L324.00,197.00 L308.00,197.00 L292.00,197.00 L276.00,197.00 L260.00,197.00 L244.00,197.00 L228.00,197.00 L212.00,197.00 L196.00,197.00 L180.00,197.00 L164.00,197.00 L148.00,197.00 L132.00,197.00 L116.00,197.00 L100.00,197.00 L84.00,197.00 L68.00,197.00 L68.00,213.00 L84.00,213.00 L100.00,213.00 L116.00,213.00 L132.00,213.00 L148.00,213.00 L164.00,213.00 L180.00,213.00 L196.00,213.00 L212.00,213.00 L228.00,213.00 L244.00,213.00 L260.00,213.00 L276.00,213.00 L292.00,213.00 L308.00,213.00 L324.00,213.00 L340.00,213.00 L356.00,213.00 L372.00,213.00 L388.00,213.00 L404.00,213.00 L420.00,213.00 L436.00,213.00 L452.00,213.00 L468.00,213.00 L484.00,213.00 L500.00,213.00 L516.00,213.00 L532.00,213.00 L548.00,213.00 L564.00,213.00 L580.00,213.00 L596.00,213.00 L612.00,213.00 L628.00,213.00 L644.00,213.00 L660.00,213.00 L676.00,213.00 L692.00,213.00 L708.00,213.00 L724.00,213.00 L740.00,213.00 L756.00,213.00 L772.00,213.00 L788.00,213.00 L804.00,213.00 L820.00,213.00 L836.00,213.00 L852.00,213.00 L868.00,213.00 L884.00,213.00 L900.00,213.00 L916.00,237.00 L48.00,237.00 L48.00,117.00 L68.00,117.00 Z" stroke="#c8ff5f" stroke-width="11" stroke-dasharray="31 6925.8444" stroke-dashoffset="31" style="animation-name:body"/>
+<g>
+<animateMotion path="M68.00,117.00 L84.00,117.00 L100.00,117.00 L116.00,117.00 L132.00,117.00 L148.00,117.00 L164.00,117.00 L180.00,117.00 L196.00,117.00 L212.00,117.00 L228.00,117.00 L244.00,117.00 L260.00,117.00 L276.00,117.00 L292.00,117.00 L308.00,117.00 L324.00,117.00 L340.00,117.00 L356.00,117.00 L372.00,117.00 L388.00,117.00 L404.00,117.00 L420.00,117.00 L436.00,117.00 L452.00,117.00 L468.00,117.00 L484.00,117.00 L500.00,117.00 L516.00,117.00 L532.00,117.00 L548.00,117.00 L564.00,117.00 L580.00,117.00 L596.00,117.00 L612.00,117.00 L628.00,117.00 L644.00,117.00 L660.00,117.00 L676.00,117.00 L692.00,117.00 L708.00,117.00 L724.00,117.00 L740.00,117.00 L756.00,117.00 L772.00,117.00 L788.00,117.00 L804.00,117.00 L820.00,117.00 L836.00,117.00 L852.00,117.00 L868.00,117.00 L884.00,117.00 L900.00,117.00 L900.00,133.00 L884.00,133.00 L868.00,133.00 L852.00,133.00 L836.00,133.00 L820.00,133.00 L804.00,133.00 L788.00,133.00 L772.00,133.00 L756.00,133.00 L740.00,133.00 L724.00,133.00 L708.00,133.00 L692.00,133.00 L676.00,133.00 L660.00,133.00 L644.00,133.00 L628.00,133.00 L612.00,133.00 L596.00,133.00 L580.00,133.00 L564.00,133.00 L548.00,133.00 L532.00,133.00 L516.00,133.00 L500.00,133.00 L484.00,133.00 L468.00,133.00 L452.00,133.00 L436.00,133.00 L420.00,133.00 L404.00,133.00 L388.00,133.00 L372.00,133.00 L356.00,133.00 L340.00,133.00 L324.00,133.00 L308.00,133.00 L292.00,133.00 L276.00,133.00 L260.00,133.00 L244.00,133.00 L228.00,133.00 L212.00,133.00 L196.00,133.00 L180.00,133.00 L164.00,133.00 L148.00,133.00 L132.00,133.00 L116.00,133.00 L100.00,133.00 L84.00,133.00 L68.00,133.00 L68.00,149.00 L84.00,149.00 L100.00,149.00 L116.00,149.00 L132.00,149.00 L148.00,149.00 L164.00,149.00 L180.00,149.00 L196.00,149.00 L212.00,149.00 L228.00,149.00 L244.00,149.00 L260.00,149.00 L276.00,149.00 L292.00,149.00 L308.00,149.00 L324.00,149.00 L340.00,149.00 L356.00,149.00 L372.00,149.00 L388.00,149.00 L404.00,149.00 L420.00,149.00 L436.00,149.00 L452.00,149.00 L468.00,149.00 L484.00,149.00 L500.00,149.00 L516.00,149.00 L532.00,149.00 L548.00,149.00 L564.00,149.00 L580.00,149.00 L596.00,149.00 L612.00,149.00 L628.00,149.00 L644.00,149.00 L660.00,149.00 L676.00,149.00 L692.00,149.00 L708.00,149.00 L724.00,149.00 L740.00,149.00 L756.00,149.00 L772.00,149.00 L788.00,149.00 L804.00,149.00 L820.00,149.00 L836.00,149.00 L852.00,149.00 L868.00,149.00 L884.00,149.00 L900.00,149.00 L900.00,165.00 L884.00,165.00 L868.00,165.00 L852.00,165.00 L836.00,165.00 L820.00,165.00 L804.00,165.00 L788.00,165.00 L772.00,165.00 L756.00,165.00 L740.00,165.00 L724.00,165.00 L708.00,165.00 L692.00,165.00 L676.00,165.00 L660.00,165.00 L644.00,165.00 L628.00,165.00 L612.00,165.00 L596.00,165.00 L580.00,165.00 L564.00,165.00 L548.00,165.00 L532.00,165.00 L516.00,165.00 L500.00,165.00 L484.00,165.00 L468.00,165.00 L452.00,165.00 L436.00,165.00 L420.00,165.00 L404.00,165.00 L388.00,165.00 L372.00,165.00 L356.00,165.00 L340.00,165.00 L324.00,165.00 L308.00,165.00 L292.00,165.00 L276.00,165.00 L260.00,165.00 L244.00,165.00 L228.00,165.00 L212.00,165.00 L196.00,165.00 L180.00,165.00 L164.00,165.00 L148.00,165.00 L132.00,165.00 L116.00,165.00 L100.00,165.00 L84.00,165.00 L68.00,165.00 L68.00,181.00 L84.00,181.00 L100.00,181.00 L116.00,181.00 L132.00,181.00 L148.00,181.00 L164.00,181.00 L180.00,181.00 L196.00,181.00 L212.00,181.00 L228.00,181.00 L244.00,181.00 L260.00,181.00 L276.00,181.00 L292.00,181.00 L308.00,181.00 L324.00,181.00 L340.00,181.00 L356.00,181.00 L372.00,181.00 L388.00,181.00 L404.00,181.00 L420.00,181.00 L436.00,181.00 L452.00,181.00 L468.00,181.00 L484.00,181.00 L500.00,181.00 L516.00,181.00 L532.00,181.00 L548.00,181.00 L564.00,181.00 L580.00,181.00 L596.00,181.00 L612.00,181.00 L628.00,181.00 L644.00,181.00 L660.00,181.00 L676.00,181.00 L692.00,181.00 L708.00,181.00 L724.00,181.00 L740.00,181.00 L756.00,181.00 L772.00,181.00 L788.00,181.00 L804.00,181.00 L820.00,181.00 L836.00,181.00 L852.00,181.00 L868.00,181.00 L884.00,181.00 L900.00,181.00 L900.00,197.00 L884.00,197.00 L868.00,197.00 L852.00,197.00 L836.00,197.00 L820.00,197.00 L804.00,197.00 L788.00,197.00 L772.00,197.00 L756.00,197.00 L740.00,197.00 L724.00,197.00 L708.00,197.00 L692.00,197.00 L676.00,197.00 L660.00,197.00 L644.00,197.00 L628.00,197.00 L612.00,197.00 L596.00,197.00 L580.00,197.00 L564.00,197.00 L548.00,197.00 L532.00,197.00 L516.00,197.00 L500.00,197.00 L484.00,197.00 L468.00,197.00 L452.00,197.00 L436.00,197.00 L420.00,197.00 L404.00,197.00 L388.00,197.00 L372.00,197.00 L356.00,197.00 L340.00,197.00 L324.00,197.00 L308.00,197.00 L292.00,197.00 L276.00,197.00 L260.00,197.00 L244.00,197.00 L228.00,197.00 L212.00,197.00 L196.00,197.00 L180.00,197.00 L164.00,197.00 L148.00,197.00 L132.00,197.00 L116.00,197.00 L100.00,197.00 L84.00,197.00 L68.00,197.00 L68.00,213.00 L84.00,213.00 L100.00,213.00 L116.00,213.00 L132.00,213.00 L148.00,213.00 L164.00,213.00 L180.00,213.00 L196.00,213.00 L212.00,213.00 L228.00,213.00 L244.00,213.00 L260.00,213.00 L276.00,213.00 L292.00,213.00 L308.00,213.00 L324.00,213.00 L340.00,213.00 L356.00,213.00 L372.00,213.00 L388.00,213.00 L404.00,213.00 L420.00,213.00 L436.00,213.00 L452.00,213.00 L468.00,213.00 L484.00,213.00 L500.00,213.00 L516.00,213.00 L532.00,213.00 L548.00,213.00 L564.00,213.00 L580.00,213.00 L596.00,213.00 L612.00,213.00 L628.00,213.00 L644.00,213.00 L660.00,213.00 L676.00,213.00 L692.00,213.00 L708.00,213.00 L724.00,213.00 L740.00,213.00 L756.00,213.00 L772.00,213.00 L788.00,213.00 L804.00,213.00 L820.00,213.00 L836.00,213.00 L852.00,213.00 L868.00,213.00 L884.00,213.00 L900.00,213.00 L916.00,237.00 L48.00,237.00 L48.00,117.00 L68.00,117.00 Z" dur="46s" repeatCount="indefinite" rotate="auto" calcMode="paced"/>
+<rect x="-7" y="-7" width="15" height="14" rx="5" fill="#c8ff5f" stroke="#e3ffab" stroke-width=".8"/>
+<circle cx="3" cy="-3" r="1.5" fill="#132015"/><circle cx="3" cy="3" r="1.5" fill="#132015"/>
+</g></g>
+<path d="M36 251H924" stroke="#29323d"/>
+<text x="36" y="275" fill="#a3b0bf" font-size="11">2025-10-26 — 2026-10-29 · Public contribution calendar</text>
+<text x="752" y="275" fill="#a3b0bf" font-size="11">Less</text>
+<rect x="783" y="265" width="12" height="12" rx="3" fill="#19242c"/>
+<rect x="801" y="265" width="12" height="12" rx="3" fill="#38583c"/>
+<rect x="819" y="265" width="12" height="12" rx="3" fill="#638a41"/>
+<rect x="837" y="265" width="12" height="12" rx="3" fill="#93be49"/>
+<rect x="855" y="265" width="12" height="12" rx="3" fill="#c8ff5f"/>
+<text x="882" y="275" fill="#a3b0bf" font-size="11">More</text>
+</svg>

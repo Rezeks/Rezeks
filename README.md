@@ -7,7 +7,7 @@
 
 <br />
 
-<p><a href="#projects"><b>Проекты</b></a> &nbsp; / &nbsp; <a href="#stack"><b>Технологии</b></a> &nbsp; / &nbsp; <a href="#activity"><b>GitHub в цифрах</b></a> &nbsp; / &nbsp; <a href="https://github.com/Rezeks?tab=repositories"><b>Все репозитории ↗</b></a></p>
+<p><a href="#playground"><b>3D-активность</b></a> &nbsp; / &nbsp; <a href="#projects"><b>Проекты</b></a> &nbsp; / &nbsp; <a href="#stack"><b>Технологии</b></a> &nbsp; / &nbsp; <a href="#activity"><b>Статистика</b></a></p>
 
 <br />
 
@@ -19,9 +19,54 @@
 
 <br />
 
+<a id="playground"></a>
+
+## 01 &nbsp; / &nbsp; Код в движении
+
+Мой календарь GitHub в объёме. Каждый столбик — один день; высота показывает количество вкладов.
+
+<a href="./assets/activity-3d.svg">
+  <picture>
+    <source media="(max-width: 600px)" srcset="./assets/activity-3d-mobile.svg" />
+    <img src="./assets/activity-3d.svg" width="100%" alt="Трёхмерный календарь активности Rezeks: высота каждого столбика соответствует числу вкладов за день." />
+  </picture>
+</a>
+
+<details>
+<summary><b>📈 Показать динамику по месяцам</b></summary>
+
+<br />
+
+<picture>
+  <source media="(max-width: 600px)" srcset="./assets/activity-monthly-mobile.svg" />
+  <img src="./assets/activity-monthly.svg" width="100%" alt="Помесячное количество вкладов Rezeks за период календаря GitHub. Первый и последний месяцы могут быть неполными." />
+</picture>
+
+</details>
+
+### 🐍 &nbsp; Contribution snake
+
+Змейка проходит по моему календарю и собирает клетки активности.
+
+<img src="./assets/contribution-snake.svg" width="100%" alt="Анимация змейки, которая проходит по календарю вкладов Rezeks и съедает клетки активности." />
+
+<details>
+<summary><b>Как читать графики и откуда данные</b></summary>
+
+- Графики используют календарь, доступный в [моём публичном профиле](https://github.com/Rezeks).
+- **Вклад** — единица активности GitHub; это не только коммиты.
+- 3D-календарь, помесячный график и змейка строятся из одного снимка данных. Период указан на графиках.
+- Анимации повторяются при просмотре. Данные обновляются ежедневно через GitHub Actions.
+
+[Открыть 3D-график отдельно](./assets/activity-3d.svg) · [Данные календаря](./assets/activity.json) · [История обновлений](https://github.com/Rezeks/Rezeks/actions/workflows/profile-stats.yml)
+
+</details>
+
+<br />
+
 <a id="projects"></a>
 
-## 01 &nbsp; / &nbsp; Избранные проекты
+## 02 &nbsp; / &nbsp; Избранные проекты
 
 От интерфейса до серверной логики. Нажми **«Что внутри»**, чтобы заглянуть в проект.
 
@@ -126,7 +171,15 @@
 
 <a id="stack"></a>
 
-## 02 &nbsp; / &nbsp; Технологии в моих проектах
+## 03 &nbsp; / &nbsp; Технологии в моих проектах
+
+<picture>
+  <source media="(max-width: 600px)" srcset="./assets/tech-orbit-mobile.svg" />
+  <img src="./assets/tech-orbit.svg" width="100%" alt="Анимированная карта стека Rezeks: TypeScript, React, Next.js, Java, Spring, Python, FastAPI и Go вокруг центра Build Lab." />
+</picture>
+
+<details>
+<summary><b>Развернуть полный стек по направлениям</b></summary>
 
 | Направление | Стек |
 | :--- | :--- |
@@ -135,11 +188,13 @@
 | **Backend** | Java · Spring Boot · Python · FastAPI · Go |
 | **Данные и инструменты** | PostgreSQL · Prisma · Kafka · Docker · Git |
 
+</details>
+
 <br />
 
 <a id="activity"></a>
 
-## 03 &nbsp; / &nbsp; GitHub в цифрах
+## 04 &nbsp; / &nbsp; GitHub в цифрах
 
 <a href="https://github.com/Rezeks?tab=repositories">
   <picture>
@@ -151,7 +206,7 @@
 <details>
 <summary>Как обновляется карточка</summary>
 
-Статистика собирается из публичного GitHub API ежедневно через GitHub Actions. Дата последнего обновления указана на изображении; языки считаются по основному языку каждого публичного проекта, без форков и этого профильного репозитория.
+Статистика собирается из публичного GitHub API ежедневно через GitHub Actions. Дата последнего обновления указана на изображении; языки считаются по основному языку каждого публичного проекта, без форков и этого профильного репозитория. Если обновление не удалось, в профиле остаётся последний сохранённый снимок.
 
 [История обновлений](https://github.com/Rezeks/Rezeks/actions/workflows/profile-stats.yml) · [Скрипт генерации](./scripts/update_stats.py)
 
