@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="960" height="300" viewBox="0 0 960 300" role="img" aria-labelledby="title desc">
 <title id="title">Rezeks — contribution snake</title>
-<desc id="desc">Animated view of the public contribution calendar from 2025-10-26 to 2026-10-30. 110 contributions on 27 active days. The snake visits every day, eats the colored squares, and returns outside the calendar as the board resets. This is a decorative traversal, not the chronological order of contributions.</desc>
+<desc id="desc">Animated view of the public contribution calendar from 2025-10-26 to 2026-10-31. 110 contributions on 27 active days. The snake visits every day, eats the colored squares, and returns outside the calendar as the board resets. This is a decorative traversal, not the chronological order of contributions.</desc>
 <defs><filter id="glow" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="1.3"/></filter></defs>
 <style>text{font-family:'Segoe UI',Arial,sans-serif}
 .mono{font-family:Consolas,'Liberation Mono',monospace}
@@ -430,7 +430,7 @@
 <rect x="894.00" y="159.00" width="12" height="12" rx="3" fill="#19242c"/>
 <rect x="894.00" y="175.00" width="12" height="12" rx="3" fill="#19242c"/>
 <rect x="894.00" y="191.00" width="12" height="12" rx="3" fill="#19242c"/>
-<rect x="894.00" y="207.00" width="12" height="12" rx="3" fill="#111820"/>
+<rect x="894.00" y="207.00" width="12" height="12" rx="3" fill="#19242c"/>
 <rect class="food" x="62.00" y="207.00" width="12" height="12" rx="3" fill="#38583c" style="animation-name:eat6"><title>2025-11-01: 1 contributions</title></rect>
 <rect class="food" x="78.00" y="159.00" width="12" height="12" rx="3" fill="#638a41" style="animation-name:eat10"><title>2025-11-05: 7 contributions</title></rect>
 <rect class="food" x="94.00" y="127.00" width="12" height="12" rx="3" fill="#38583c" style="animation-name:eat15"><title>2025-11-10: 1 contributions</title></rect>
@@ -468,7 +468,7 @@
 <circle cx="3" cy="-3" r="1.5" fill="#132015"/><circle cx="3" cy="3" r="1.5" fill="#132015"/>
 </g></g>
 <path d="M36 251H924" stroke="#29323d"/>
-<text x="36" y="275" fill="#a3b0bf" font-size="11">2025-10-26 — 2026-10-30 · Public contribution calendar</text>
+<text x="36" y="275" fill="#a3b0bf" font-size="11">2025-10-26 — 2026-10-31 · Public contribution calendar</text>
 <text x="752" y="275" fill="#a3b0bf" font-size="11">Less</text>
 <rect x="783" y="265" width="12" height="12" rx="3" fill="#19242c"/>
 <rect x="801" y="265" width="12" height="12" rx="3" fill="#38583c"/>
