@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="600" height="470" viewBox="0 0 600 470" role="img" aria-labelledby="title desc">
-<title id="title">Rezeks — contribution city</title><desc id="desc">Isometric contribution calendar for Rezeks, 2025-11-02 through 2026-11-01. 109 contributions across 26 active days. The tallest day has 19 contributions. Column height is proportional to the daily contribution count.</desc>
+<title id="title">Rezeks — contribution city</title><desc id="desc">Isometric contribution calendar for Rezeks, 2025-11-02 through 2026-11-02. 109 contributions across 26 active days. The tallest day has 19 contributions. Column height is proportional to the daily contribution count.</desc>
 <defs><linearGradient id="surface" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#18242b"/><stop offset="1" stop-color="#0d151c"/></linearGradient>
 <linearGradient id="fill" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#c8ff5f" stop-opacity=".22"/><stop offset="1" stop-color="#c8ff5f" stop-opacity=".01"/></linearGradient>
 <filter id="glow" x="-100%" y="-100%" width="300%" height="300%"><feGaussianBlur stdDeviation="3"/></filter></defs>
@@ -1681,6 +1681,11 @@
 <polygon points="586.24,362.27 575.11,359.54 575.11,361.54 586.24,364.27" fill="#1b2a33" />
 <polygon points="588.21,353.08 599.34,355.81 586.24,362.27 575.11,359.54" fill="#263640" stroke="#07120f" stroke-width=".45"/>
 </g>
+<g><title>2026-11-02: 0 contributions</title>
+<polygon points="836.34,356.31 823.24,362.77 823.24,364.77 836.34,358.31" fill="#14212b" />
+<polygon points="823.24,362.77 812.11,360.04 812.11,362.04 823.24,364.77" fill="#1b2a33" />
+<polygon points="825.21,353.58 836.34,356.31 823.24,362.77 812.11,360.04" fill="#263640" stroke="#07120f" stroke-width=".45"/>
+</g>
 <g><title>2026-09-17: 0 contributions</title>
 <polygon points="696.79,356.66 683.69,363.12 683.69,365.12 696.79,358.66" fill="#14212b" />
 <polygon points="683.69,363.12 672.56,360.39 672.56,362.39 683.69,365.12" fill="#1b2a33" />
@@ -1864,6 +1869,6 @@
 <rect x="158" y="396" width="15" height="15" rx="3" fill="#d5ff80"/>
 <text x="190" y="408" fill="#7f91a3" font-size="14" >HIGH</text>
 <text x="28" y="438" fill="#a3b0bf" font-size="16" >Height = daily contributions</text>
-<text x="572" y="460" fill="#7f91a3" font-size="13" text-anchor="end">2025-11-02 — 2026-11-01</text>
+<text x="572" y="460" fill="#7f91a3" font-size="13" text-anchor="end">2025-11-02 — 2026-11-02</text>
 </g>
 </svg>
