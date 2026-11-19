@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="960" height="300" viewBox="0 0 960 300" role="img" aria-labelledby="title desc">
 <title id="title">Rezeks — coding rhythm and recent projects</title>
-<desc id="desc">Longest streak 3 days (2026-05-03 to 2026-05-05). Active in 16 of 54 weeks. Most productive weekday: Wednesday. Recently pushed: dota-config-switcher, Data_encryption, JAVA_session.</desc>
+<desc id="desc">Longest streak 3 days (2026-05-03 to 2026-05-05). Active in 16 of 54 weeks. Most productive weekday: Wednesday. Recently pushed: next-pizza, dota-config-switcher, Data_encryption.</desc>
 <defs><linearGradient id="pulse-bar" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#c8ff5f"/><stop offset="1" stop-color="#c8ff5f" stop-opacity=".25"/></linearGradient><linearGradient id="pulse-edge" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#4f6a33"/><stop offset=".5" stop-color="#29333f"/><stop offset="1" stop-color="#5d4f7a"/></linearGradient><style>.bar{transform-box:fill-box;transform-origin:bottom;animation:grow 1.4s cubic-bezier(.2,.8,.2,1) both}.row{animation:fade 1s ease-out both}.beat{animation:beat 2.4s ease-in-out infinite}.ecg{stroke-dasharray:620;animation:ecg 6s linear infinite}@keyframes grow{from{transform:scaleY(.04)}to{transform:scaleY(1)}}@keyframes fade{from{opacity:0;transform:translateX(12px)}to{opacity:1;transform:none}}@keyframes beat{0%,100%{opacity:.35}50%{opacity:1}}@keyframes ecg{from{stroke-dashoffset:620}to{stroke-dashoffset:-620}}@media(prefers-reduced-motion:reduce){.bar,.row,.beat,.ecg{animation:none}}</style></defs>
 <rect x=".5" y=".5" width="959" height="299" rx="18" fill="#0d1117" stroke="url(#pulse-edge)"/>
 <g font-family="Segoe UI, Helvetica, Arial, sans-serif">
@@ -22,7 +22,7 @@
 <text x="116.3" y="267" fill="#a3b0bf" font-size="11" text-anchor="middle">Tue</text>
 <rect x="158.7" y="172.0" width="33.0" height="76.0" rx="4" fill="url(#pulse-bar)" class="bar" style="animation-delay:0.16s"><title>Wednesday: 42 contributions</title></rect>
 <text x="175.1" y="267" fill="#eef2f6" font-size="11" text-anchor="middle">Wed</text>
-<rect x="217.5" y="213.6" width="33.0" height="34.4" rx="4" fill="#2b3a45" class="bar" style="animation-delay:0.24s"><title>Thursday: 19 contributions</title></rect>
+<rect x="217.5" y="211.8" width="33.0" height="36.2" rx="4" fill="#2b3a45" class="bar" style="animation-delay:0.24s"><title>Thursday: 20 contributions</title></rect>
 <text x="234.0" y="267" fill="#a3b0bf" font-size="11" text-anchor="middle">Thu</text>
 <rect x="276.4" y="224.5" width="33.0" height="23.5" rx="4" fill="#2b3a45" class="bar" style="animation-delay:0.32s"><title>Friday: 13 contributions</title></rect>
 <text x="292.9" y="267" fill="#a3b0bf" font-size="11" text-anchor="middle">Fri</text>
@@ -33,24 +33,24 @@
 <text x="512" y="70" fill="#eef2f6" font-size="10" letter-spacing="1.6">RECENTLY SHIPPED</text>
 <g class="row" style="animation-delay:0.20s">
 <rect x="512" y="84" width="416" height="56" rx="10" fill="#10171f" stroke="#25323d"/>
-<rect x="512" y="96" width="3" height="32" rx="1.5" fill="#b8a5ff"/>
-<text x="530" y="109" fill="#eef2f6" font-size="15" font-weight="600">dota-config-switcher</text>
-<text x="912" y="109" fill="#a3b0bf" font-size="11" text-anchor="end" font-family="'Cascadia Code', Consolas, 'Liberation Mono', monospace">Nov 11</text>
-<text x="530" y="128" fill="#a3b0bf" font-size="11" >Python · Перенос настроек Dota 2 между Ste…</text>
+<rect x="512" y="96" width="3" height="32" rx="1.5" fill="#64d9e8"/>
+<text x="530" y="109" fill="#eef2f6" font-size="15" font-weight="600">next-pizza</text>
+<text x="912" y="109" fill="#a3b0bf" font-size="11" text-anchor="end" font-family="'Cascadia Code', Consolas, 'Liberation Mono', monospace">Nov 19</text>
+<text x="530" y="128" fill="#a3b0bf" font-size="11" >TypeScript</text>
 </g>
 <g class="row" style="animation-delay:0.35s">
 <rect x="512" y="150" width="416" height="56" rx="10" fill="#10171f" stroke="#25323d"/>
-<rect x="512" y="162" width="3" height="32" rx="1.5" fill="#f6c177"/>
-<text x="530" y="175" fill="#eef2f6" font-size="15" font-weight="600">Data_encryption</text>
-<text x="912" y="175" fill="#a3b0bf" font-size="11" text-anchor="end" font-family="'Cascadia Code', Consolas, 'Liberation Mono', monospace">Sep 10</text>
-<text x="530" y="194" fill="#a3b0bf" font-size="11" >JavaScript</text>
+<rect x="512" y="162" width="3" height="32" rx="1.5" fill="#b8a5ff"/>
+<text x="530" y="175" fill="#eef2f6" font-size="15" font-weight="600">dota-config-switcher</text>
+<text x="912" y="175" fill="#a3b0bf" font-size="11" text-anchor="end" font-family="'Cascadia Code', Consolas, 'Liberation Mono', monospace">Nov 11</text>
+<text x="530" y="194" fill="#a3b0bf" font-size="11" >Python · Перенос настроек Dota 2 между Ste…</text>
 </g>
 <g class="row" style="animation-delay:0.50s">
 <rect x="512" y="216" width="416" height="56" rx="10" fill="#10171f" stroke="#25323d"/>
-<rect x="512" y="228" width="3" height="32" rx="1.5" fill="#ff9e7a"/>
-<text x="530" y="241" fill="#eef2f6" font-size="15" font-weight="600">JAVA_session</text>
-<text x="912" y="241" fill="#a3b0bf" font-size="11" text-anchor="end" font-family="'Cascadia Code', Consolas, 'Liberation Mono', monospace">May 5</text>
-<text x="530" y="260" fill="#a3b0bf" font-size="11" >Java</text>
+<rect x="512" y="228" width="3" height="32" rx="1.5" fill="#f6c177"/>
+<text x="530" y="241" fill="#eef2f6" font-size="15" font-weight="600">Data_encryption</text>
+<text x="912" y="241" fill="#a3b0bf" font-size="11" text-anchor="end" font-family="'Cascadia Code', Consolas, 'Liberation Mono', monospace">Sep 10</text>
+<text x="530" y="260" fill="#a3b0bf" font-size="11" >JavaScript</text>
 </g>
 <text x="928" y="288" fill="#7f91a3" font-size="10" text-anchor="end">Last contribution Nov 19</text>
 </g>
