@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="640" viewBox="0 0 600 640" role="img" aria-labelledby="title desc">
+<title id="title">Rezeks — coding rhythm and recent projects</title>
+<desc id="desc">Longest streak 3 days (2026-05-03 to 2026-05-05). Active in 15 of 54 weeks. Most productive weekday: Wednesday. Recently pushed: dota-config-switcher, Data_encryption, JAVA_session.</desc>
+<defs><linearGradient id="pulse-bar" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#c8ff5f"/><stop offset="1" stop-color="#c8ff5f" stop-opacity=".25"/></linearGradient><linearGradient id="pulse-edge" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#4f6a33"/><stop offset=".5" stop-color="#29333f"/><stop offset="1" stop-color="#5d4f7a"/></linearGradient><style>.bar{transform-box:fill-box;transform-origin:bottom;animation:grow 1.4s cubic-bezier(.2,.8,.2,1) both}.row{animation:fade 1s ease-out both}.beat{animation:beat 2.4s ease-in-out infinite}.ecg{stroke-dasharray:620;animation:ecg 6s linear infinite}@keyframes grow{from{transform:scaleY(.04)}to{transform:scaleY(1)}}@keyframes fade{from{opacity:0;transform:translateX(12px)}to{opacity:1;transform:none}}@keyframes beat{0%,100%{opacity:.35}50%{opacity:1}}@keyframes ecg{from{stroke-dashoffset:620}to{stroke-dashoffset:-620}}@media(prefers-reduced-motion:reduce){.bar,.row,.beat,.ecg{animation:none}}</style></defs>
+<rect x=".5" y=".5" width="599" height="639" rx="18" fill="#0d1117" stroke="url(#pulse-edge)"/>
+<g font-family="Segoe UI, Helvetica, Arial, sans-serif">
+<text x="28" y="46" fill="#eef2f6" font-size="27" font-weight="600">Rhythm &amp; pulse.</text>
+<polyline points="350.0,38.0 434.4,38.0 443.2,32.0 452.1,43.0 461.0,16.0 469.9,52.0 478.8,38.0 572.0,38.0" fill="none" stroke="#29323d" stroke-width="1.5"/><polyline class="ecg" points="350.0,38.0 434.4,38.0 443.2,32.0 452.1,43.0 461.0,16.0 469.9,52.0 478.8,38.0 572.0,38.0" fill="none" stroke="#c8ff5f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="28" y="110" fill="#c8ff5f" font-size="40" font-weight="650">3d</text>
+<text x="28" y="138" fill="#a3b0bf" font-size="17" >longest streak</text>
+<text x="218" y="110" fill="#c8ff5f" font-size="40" font-weight="650">15/54</text>
+<text x="218" y="138" fill="#a3b0bf" font-size="17" >active weeks</text>
+<text x="408" y="110" fill="#c8ff5f" font-size="40" font-weight="650">Wed</text>
+<text x="408" y="138" fill="#a3b0bf" font-size="17" >peak weekday</text>
+<path d="M28 160h544" fill="none" stroke="#29323d"/>
+<text x="28" y="194" fill="#eef2f6" font-size="18" font-weight="600">Weekly rhythm</text>
+<rect x="41.3" y="289.0" width="44.2" height="11.0" rx="4" fill="#2b3a45" class="bar" style="animation-delay:0.00s"><title>Monday: 5 contributions</title></rect>
+<text x="63.4" y="324" fill="#a3b0bf" font-size="16" text-anchor="middle">Mon</text>
+<rect x="120.2" y="284.7" width="44.2" height="15.3" rx="4" fill="#2b3a45" class="bar" style="animation-delay:0.08s"><title>Tuesday: 7 contributions</title></rect>
+<text x="142.3" y="324" fill="#a3b0bf" font-size="16" text-anchor="middle">Tue</text>
+<rect x="199.1" y="208.0" width="44.2" height="92.0" rx="4" fill="url(#pulse-bar)" class="bar" style="animation-delay:0.16s"><title>Wednesday: 42 contributions</title></rect>
+<text x="221.1" y="324" fill="#eef2f6" font-size="16" text-anchor="middle">Wed</text>
+<rect x="277.9" y="260.6" width="44.2" height="39.4" rx="4" fill="#2b3a45" class="bar" style="animation-delay:0.24s"><title>Thursday: 18 contributions</title></rect>
+<text x="300.0" y="324" fill="#a3b0bf" font-size="16" text-anchor="middle">Thu</text>
+<rect x="356.8" y="271.5" width="44.2" height="28.5" rx="4" fill="#2b3a45" class="bar" style="animation-delay:0.32s"><title>Friday: 13 contributions</title></rect>
+<text x="378.9" y="324" fill="#a3b0bf" font-size="16" text-anchor="middle">Fri</text>
+<rect x="435.6" y="282.5" width="44.2" height="17.5" rx="4" fill="#2b3a45" class="bar" style="animation-delay:0.40s"><title>Saturday: 8 contributions</title></rect>
+<text x="457.7" y="324" fill="#a3b0bf" font-size="16" text-anchor="middle">Sat</text>
+<rect x="514.5" y="275.9" width="44.2" height="24.1" rx="4" fill="#2b3a45" class="bar" style="animation-delay:0.48s"><title>Sunday: 11 contributions</title></rect>
+<text x="536.6" y="324" fill="#a3b0bf" font-size="16" text-anchor="middle">Sun</text>
+<text x="28" y="368" fill="#eef2f6" font-size="18" font-weight="600">Recently shipped</text>
+<g class="row" style="animation-delay:0.20s">
+<rect x="28" y="384" width="544" height="70" rx="10" fill="#10171f" stroke="#25323d"/>
+<rect x="28" y="396" width="3" height="46" rx="1.5" fill="#b8a5ff"/>
+<text x="46" y="414" fill="#eef2f6" font-size="20" font-weight="600">dota-config-switcher</text>
+<text x="556" y="414" fill="#a3b0bf" font-size="15" text-anchor="end" font-family="'Cascadia Code', Consolas, 'Liberation Mono', monospace">Nov 11</text>
+<text x="46" y="437" fill="#a3b0bf" font-size="15" >Python · Перенос настроек Dota 2 между…</text>
+</g>
+<g class="row" style="animation-delay:0.35s">
+<rect x="28" y="464" width="544" height="70" rx="10" fill="#10171f" stroke="#25323d"/>
+<rect x="28" y="476" width="3" height="46" rx="1.5" fill="#f6c177"/>
+<text x="46" y="494" fill="#eef2f6" font-size="20" font-weight="600">Data_encryption</text>
+<text x="556" y="494" fill="#a3b0bf" font-size="15" text-anchor="end" font-family="'Cascadia Code', Consolas, 'Liberation Mono', monospace">Sep 10</text>
+<text x="46" y="517" fill="#a3b0bf" font-size="15" >JavaScript</text>
+</g>
+<g class="row" style="animation-delay:0.50s">
+<rect x="28" y="544" width="544" height="70" rx="10" fill="#10171f" stroke="#25323d"/>
+<rect x="28" y="556" width="3" height="46" rx="1.5" fill="#ff9e7a"/>
+<text x="46" y="574" fill="#eef2f6" font-size="20" font-weight="600">JAVA_session</text>
+<text x="556" y="574" fill="#a3b0bf" font-size="15" text-anchor="end" font-family="'Cascadia Code', Consolas, 'Liberation Mono', monospace">May 5</text>
+<text x="46" y="597" fill="#a3b0bf" font-size="15" >Java</text>
+</g>
+</g>
+</svg>

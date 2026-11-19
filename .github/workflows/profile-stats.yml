@@ -49,10 +49,15 @@ jobs:
       - name: Animate the contribution snake
         run: python scripts/render_snake.py
 
+      - name: Render the rhythm & pulse card
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: python scripts/render_pulse.py
+
       - name: Commit the refreshed visuals
         shell: bash
         run: |
-          git add -- assets/stats.svg assets/stats-mobile.svg assets/activity.json assets/activity-3d.svg assets/activity-3d-mobile.svg assets/activity-monthly.svg assets/activity-monthly-mobile.svg assets/contribution-snake.svg
+          git add -- assets/stats.svg assets/stats-mobile.svg assets/activity.json assets/activity-3d.svg assets/activity-3d-mobile.svg assets/activity-monthly.svg assets/activity-monthly-mobile.svg assets/contribution-snake.svg assets/pulse.svg assets/pulse-mobile.svg
           if git diff --cached --quiet; then
             echo "Profile visuals have not changed."
             exit 0

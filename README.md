@@ -196,6 +196,13 @@
 
 ## 04 &nbsp; / &nbsp; GitHub в цифрах
 
+<picture>
+  <source media="(max-width: 600px)" srcset="./assets/pulse-mobile.svg" />
+  <img src="./assets/pulse.svg" width="100%" alt="Ритм работы Rezeks: самая длинная серия активных дней, число активных недель, самый продуктивный день недели и последние обновлённые проекты." />
+</picture>
+
+<br />
+
 <a href="https://github.com/Rezeks?tab=repositories">
   <picture>
     <source media="(max-width: 600px)" srcset="./assets/stats-mobile.svg" />
@@ -206,9 +213,9 @@
 <details>
 <summary>Как обновляется карточка</summary>
 
-Статистика собирается из публичного GitHub API ежедневно через GitHub Actions. Дата последнего обновления указана на изображении; языки считаются по основному языку каждого публичного проекта, без форков и этого профильного репозитория. Если обновление не удалось, в профиле остаётся последний сохранённый снимок.
+Статистика и карточка «Rhythm & pulse» собираются из публичного GitHub API и календаря вкладов ежедневно через GitHub Actions. Дата последнего обновления указана на изображении; языки считаются по основному языку каждого публичного проекта, без форков и этого профильного репозитория. Если обновление не удалось, в профиле остаётся последний сохранённый снимок.
 
-[История обновлений](https://github.com/Rezeks/Rezeks/actions/workflows/profile-stats.yml) · [Скрипт генерации](./scripts/update_stats.py)
+[История обновлений](https://github.com/Rezeks/Rezeks/actions/workflows/profile-stats.yml) · [Скрипт статистики](./scripts/update_stats.py) · [Скрипт пульса](./scripts/render_pulse.py)
 
 </details>
 
