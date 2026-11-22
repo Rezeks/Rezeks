@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="960" height="300" viewBox="0 0 960 300" role="img" aria-labelledby="title desc">
 <title id="title">Rezeks — contribution snake</title>
-<desc id="desc">Animated view of the public contribution calendar from 2025-11-16 to 2026-11-21. 106 contributions on 25 active days. The snake visits every day, eats the colored squares, and returns outside the calendar as the board resets. This is a decorative traversal, not the chronological order of contributions.</desc>
+<desc id="desc">Animated view of the public contribution calendar from 2025-11-23 to 2026-11-22. 104 contributions on 23 active days. The snake visits every day, eats the colored squares, and returns outside the calendar as the board resets. This is a decorative traversal, not the chronological order of contributions.</desc>
 <defs><filter id="glow" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="1.3"/></filter></defs>
 <style>text{font-family:'Segoe UI',Arial,sans-serif}
 .mono{font-family:Consolas,'Liberation Mono',monospace}
@@ -8,31 +8,29 @@
 .snake-tail{fill:none;stroke-linecap:round;stroke-linejoin:round;animation-duration:46s;animation-timing-function:linear;animation-iteration-count:infinite}
 .signal{animation:pulse 2.8s ease-in-out infinite}
 @keyframes pulse{0%,100%{opacity:.35}50%{opacity:1}}
-@keyframes eat2{0%,24.3589%{opacity:1}24.3989%,94%{opacity:0}98%,100%{opacity:1}}
 @keyframes eat3{0%,48.5077%{opacity:1}48.5477%,94%{opacity:0}98%,100%{opacity:1}}
 @keyframes eat10{0%,48.2778%{opacity:1}48.3178%,94%{opacity:0}98%,100%{opacity:1}}
+@keyframes eat11{0%,48.9677%{opacity:1}49.0077%,94%{opacity:0}98%,100%{opacity:1}}
+@keyframes eat14{0%,0.4400%{opacity:1}0.4800%,94%{opacity:0}98%,100%{opacity:1}}
+@keyframes eat15{0%,23.6689%{opacity:1}23.7089%,94%{opacity:0}98%,100%{opacity:1}}
 @keyframes eat17{0%,48.0478%{opacity:1}48.0878%,94%{opacity:0}98%,100%{opacity:1}}
-@keyframes eat18{0%,49.1977%{opacity:1}49.2377%,94%{opacity:0}98%,100%{opacity:1}}
-@keyframes eat21{0%,0.6700%{opacity:1}0.7100%,94%{opacity:0}98%,100%{opacity:1}}
-@keyframes eat22{0%,23.4389%{opacity:1}23.4789%,94%{opacity:0}98%,100%{opacity:1}}
-@keyframes eat24{0%,47.8178%{opacity:1}47.8578%,94%{opacity:0}98%,100%{opacity:1}}
-@keyframes eat36{0%,22.9789%{opacity:1}23.0189%,94%{opacity:0}98%,100%{opacity:1}}
-@keyframes eat38{0%,47.3578%{opacity:1}47.3978%,94%{opacity:0}98%,100%{opacity:1}}
-@keyframes eat39{0%,49.8877%{opacity:1}49.9277%,94%{opacity:0}98%,100%{opacity:1}}
-@keyframes eat73{0%,46.2079%{opacity:1}46.2479%,94%{opacity:0}98%,100%{opacity:1}}
-@keyframes eat86{0%,27.1187%{opacity:1}27.1587%,94%{opacity:0}98%,100%{opacity:1}}
-@keyframes eat160{0%,78.1764%{opacity:1}78.2164%,94%{opacity:0}98%,100%{opacity:1}}
-@keyframes eat164{0%,43.2180%{opacity:1}43.2580%,94%{opacity:0}98%,100%{opacity:1}}
-@keyframes eat166{0%,67.5969%{opacity:1}67.6369%,94%{opacity:0}98%,100%{opacity:1}}
-@keyframes eat168{0%,5.4997%{opacity:1}5.5397%,94%{opacity:0}98%,100%{opacity:1}}
-@keyframes eat169{0%,18.6091%{opacity:1}18.6491%,94%{opacity:0}98%,100%{opacity:1}}
-@keyframes eat170{0%,29.8786%{opacity:1}29.9186%,94%{opacity:0}98%,100%{opacity:1}}
-@keyframes eat292{0%,63.4571%{opacity:1}63.4971%,94%{opacity:0}98%,100%{opacity:1}}
-@keyframes eat298{0%,58.3973%{opacity:1}58.4373%,94%{opacity:0}98%,100%{opacity:1}}
-@keyframes eat311{0%,38.3882%{opacity:1}38.4282%,94%{opacity:0}98%,100%{opacity:1}}
-@keyframes eat347{0%,60.0072%{opacity:1}60.0472%,94%{opacity:0}98%,100%{opacity:1}}
-@keyframes eat360{0%,36.7783%{opacity:1}36.8183%,94%{opacity:0}98%,100%{opacity:1}}
-@keyframes eat368{0%,60.6972%{opacity:1}60.7372%,94%{opacity:0}98%,100%{opacity:1}}
+@keyframes eat29{0%,23.2089%{opacity:1}23.2489%,94%{opacity:0}98%,100%{opacity:1}}
+@keyframes eat31{0%,47.5878%{opacity:1}47.6278%,94%{opacity:0}98%,100%{opacity:1}}
+@keyframes eat32{0%,49.6577%{opacity:1}49.6977%,94%{opacity:0}98%,100%{opacity:1}}
+@keyframes eat66{0%,46.4378%{opacity:1}46.4778%,94%{opacity:0}98%,100%{opacity:1}}
+@keyframes eat79{0%,26.8888%{opacity:1}26.9288%,94%{opacity:0}98%,100%{opacity:1}}
+@keyframes eat153{0%,77.9464%{opacity:1}77.9864%,94%{opacity:0}98%,100%{opacity:1}}
+@keyframes eat157{0%,43.4480%{opacity:1}43.4880%,94%{opacity:0}98%,100%{opacity:1}}
+@keyframes eat159{0%,67.8269%{opacity:1}67.8669%,94%{opacity:0}98%,100%{opacity:1}}
+@keyframes eat161{0%,5.2698%{opacity:1}5.3098%,94%{opacity:0}98%,100%{opacity:1}}
+@keyframes eat162{0%,18.8391%{opacity:1}18.8791%,94%{opacity:0}98%,100%{opacity:1}}
+@keyframes eat163{0%,29.6486%{opacity:1}29.6886%,94%{opacity:0}98%,100%{opacity:1}}
+@keyframes eat285{0%,63.6870%{opacity:1}63.7270%,94%{opacity:0}98%,100%{opacity:1}}
+@keyframes eat291{0%,58.1673%{opacity:1}58.2073%,94%{opacity:0}98%,100%{opacity:1}}
+@keyframes eat304{0%,38.6182%{opacity:1}38.6582%,94%{opacity:0}98%,100%{opacity:1}}
+@keyframes eat340{0%,59.7772%{opacity:1}59.8172%,94%{opacity:0}98%,100%{opacity:1}}
+@keyframes eat353{0%,37.0083%{opacity:1}37.0483%,94%{opacity:0}98%,100%{opacity:1}}
+@keyframes eat361{0%,60.4672%{opacity:1}60.5072%,94%{opacity:0}98%,100%{opacity:1}}
 @keyframes tail{from{stroke-dashoffset:78}to{stroke-dashoffset:-6878.8444}}
 @keyframes middle{from{stroke-dashoffset:53}to{stroke-dashoffset:-6903.8444}}
 @keyframes body{from{stroke-dashoffset:31}to{stroke-dashoffset:-6925.8444}}
@@ -42,22 +40,22 @@
 <text x="36" y="65" fill="#a3b0bf" font-size="13">A year of activity. One square at a time.</text>
 <circle class="signal" cx="812" cy="34" r="4" fill="#c8ff5f"/>
 <text x="827" y="38" fill="#c8ff5f" font-size="11" letter-spacing="1.4" class="mono">AUTO / LOOP</text>
-<text x="924" y="65" text-anchor="end" fill="#b8a5ff" font-size="13">106 contributions · 25 active days</text>
+<text x="924" y="65" text-anchor="end" fill="#b8a5ff" font-size="13">104 contributions · 23 active days</text>
 <text x="40" y="137" fill="#687886" font-size="10" text-anchor="middle" class="mono">M</text>
 <text x="40" y="169" fill="#687886" font-size="10" text-anchor="middle" class="mono">W</text>
 <text x="40" y="201" fill="#687886" font-size="10" text-anchor="middle" class="mono">F</text>
-<text x="94.00" y="96" fill="#a3b0bf" font-size="11" class="mono">Dec</text>
-<text x="158.00" y="96" fill="#a3b0bf" font-size="11" class="mono">Jan</text>
-<text x="238.00" y="96" fill="#a3b0bf" font-size="11" class="mono">Feb</text>
-<text x="302.00" y="96" fill="#a3b0bf" font-size="11" class="mono">Mar</text>
-<text x="366.00" y="96" fill="#a3b0bf" font-size="11" class="mono">Apr</text>
-<text x="430.00" y="96" fill="#a3b0bf" font-size="11" class="mono">May</text>
-<text x="510.00" y="96" fill="#a3b0bf" font-size="11" class="mono">Jun</text>
-<text x="574.00" y="96" fill="#a3b0bf" font-size="11" class="mono">Jul</text>
-<text x="638.00" y="96" fill="#a3b0bf" font-size="11" class="mono">Aug</text>
-<text x="718.00" y="96" fill="#a3b0bf" font-size="11" class="mono">Sep</text>
-<text x="782.00" y="96" fill="#a3b0bf" font-size="11" class="mono">Oct</text>
-<text x="862.00" y="96" fill="#a3b0bf" font-size="11" class="mono">Nov</text>
+<text x="78.00" y="96" fill="#a3b0bf" font-size="11" class="mono">Dec</text>
+<text x="142.00" y="96" fill="#a3b0bf" font-size="11" class="mono">Jan</text>
+<text x="222.00" y="96" fill="#a3b0bf" font-size="11" class="mono">Feb</text>
+<text x="286.00" y="96" fill="#a3b0bf" font-size="11" class="mono">Mar</text>
+<text x="350.00" y="96" fill="#a3b0bf" font-size="11" class="mono">Apr</text>
+<text x="414.00" y="96" fill="#a3b0bf" font-size="11" class="mono">May</text>
+<text x="494.00" y="96" fill="#a3b0bf" font-size="11" class="mono">Jun</text>
+<text x="558.00" y="96" fill="#a3b0bf" font-size="11" class="mono">Jul</text>
+<text x="622.00" y="96" fill="#a3b0bf" font-size="11" class="mono">Aug</text>
+<text x="702.00" y="96" fill="#a3b0bf" font-size="11" class="mono">Sep</text>
+<text x="766.00" y="96" fill="#a3b0bf" font-size="11" class="mono">Oct</text>
+<text x="846.00" y="96" fill="#a3b0bf" font-size="11" class="mono">Nov</text>
 <rect x="62.00" y="111.00" width="12" height="12" rx="3" fill="#19242c"/>
 <rect x="62.00" y="127.00" width="12" height="12" rx="3" fill="#19242c"/>
 <rect x="62.00" y="143.00" width="12" height="12" rx="3" fill="#19242c"/>
@@ -423,37 +421,35 @@
 <rect x="878.00" y="191.00" width="12" height="12" rx="3" fill="#19242c"/>
 <rect x="878.00" y="207.00" width="12" height="12" rx="3" fill="#19242c"/>
 <rect x="894.00" y="111.00" width="12" height="12" rx="3" fill="#19242c"/>
-<rect x="894.00" y="127.00" width="12" height="12" rx="3" fill="#19242c"/>
-<rect x="894.00" y="143.00" width="12" height="12" rx="3" fill="#19242c"/>
-<rect x="894.00" y="159.00" width="12" height="12" rx="3" fill="#19242c"/>
-<rect x="894.00" y="175.00" width="12" height="12" rx="3" fill="#19242c"/>
-<rect x="894.00" y="191.00" width="12" height="12" rx="3" fill="#19242c"/>
-<rect x="894.00" y="207.00" width="12" height="12" rx="3" fill="#19242c"/>
-<rect class="food" x="62.00" y="143.00" width="12" height="12" rx="3" fill="#38583c" style="animation-name:eat2"><title>2025-11-18: 1 contributions</title></rect>
-<rect class="food" x="62.00" y="159.00" width="12" height="12" rx="3" fill="#38583c" style="animation-name:eat3"><title>2025-11-19: 1 contributions</title></rect>
-<rect class="food" x="78.00" y="159.00" width="12" height="12" rx="3" fill="#38583c" style="animation-name:eat10"><title>2025-11-26: 1 contributions</title></rect>
-<rect class="food" x="94.00" y="159.00" width="12" height="12" rx="3" fill="#38583c" style="animation-name:eat17"><title>2025-12-03: 3 contributions</title></rect>
-<rect class="food" x="94.00" y="175.00" width="12" height="12" rx="3" fill="#38583c" style="animation-name:eat18"><title>2025-12-04: 2 contributions</title></rect>
-<rect class="food" x="110.00" y="111.00" width="12" height="12" rx="3" fill="#38583c" style="animation-name:eat21"><title>2025-12-07: 2 contributions</title></rect>
-<rect class="food" x="110.00" y="127.00" width="12" height="12" rx="3" fill="#38583c" style="animation-name:eat22"><title>2025-12-08: 1 contributions</title></rect>
-<rect class="food" x="110.00" y="159.00" width="12" height="12" rx="3" fill="#38583c" style="animation-name:eat24"><title>2025-12-10: 2 contributions</title></rect>
-<rect class="food" x="142.00" y="127.00" width="12" height="12" rx="3" fill="#38583c" style="animation-name:eat36"><title>2025-12-22: 1 contributions</title></rect>
-<rect class="food" x="142.00" y="159.00" width="12" height="12" rx="3" fill="#38583c" style="animation-name:eat38"><title>2025-12-24: 1 contributions</title></rect>
-<rect class="food" x="142.00" y="175.00" width="12" height="12" rx="3" fill="#93be49" style="animation-name:eat39"><title>2025-12-25: 11 contributions</title></rect>
-<rect class="food" x="222.00" y="159.00" width="12" height="12" rx="3" fill="#38583c" style="animation-name:eat73"><title>2026-01-28: 2 contributions</title></rect>
-<rect class="food" x="254.00" y="143.00" width="12" height="12" rx="3" fill="#638a41" style="animation-name:eat86"><title>2026-02-10: 5 contributions</title></rect>
-<rect class="food" x="414.00" y="207.00" width="12" height="12" rx="3" fill="#638a41" style="animation-name:eat160"><title>2026-04-25: 8 contributions</title></rect>
-<rect class="food" x="430.00" y="159.00" width="12" height="12" rx="3" fill="#638a41" style="animation-name:eat164"><title>2026-04-29: 9 contributions</title></rect>
-<rect class="food" x="430.00" y="191.00" width="12" height="12" rx="3" fill="#638a41" style="animation-name:eat166"><title>2026-05-01: 9 contributions</title></rect>
-<rect class="food" x="446.00" y="111.00" width="12" height="12" rx="3" fill="#638a41" style="animation-name:eat168"><title>2026-05-03: 9 contributions</title></rect>
-<rect class="food" x="446.00" y="127.00" width="12" height="12" rx="3" fill="#38583c" style="animation-name:eat169"><title>2026-05-04: 3 contributions</title></rect>
-<rect class="food" x="446.00" y="143.00" width="12" height="12" rx="3" fill="#38583c" style="animation-name:eat170"><title>2026-05-05: 1 contributions</title></rect>
-<rect class="food" x="718.00" y="191.00" width="12" height="12" rx="3" fill="#38583c" style="animation-name:eat292"><title>2026-09-04: 4 contributions</title></rect>
-<rect class="food" x="734.00" y="175.00" width="12" height="12" rx="3" fill="#38583c" style="animation-name:eat298"><title>2026-09-10: 1 contributions</title></rect>
-<rect class="food" x="766.00" y="159.00" width="12" height="12" rx="3" fill="#c8ff5f" style="animation-name:eat311"><title>2026-09-23: 19 contributions</title></rect>
-<rect class="food" x="846.00" y="175.00" width="12" height="12" rx="3" fill="#38583c" style="animation-name:eat347"><title>2026-10-29: 4 contributions</title></rect>
-<rect class="food" x="878.00" y="159.00" width="12" height="12" rx="3" fill="#38583c" style="animation-name:eat360"><title>2026-11-11: 4 contributions</title></rect>
-<rect class="food" x="894.00" y="175.00" width="12" height="12" rx="3" fill="#38583c" style="animation-name:eat368"><title>2026-11-19: 2 contributions</title></rect>
+<rect x="894.00" y="127.00" width="12" height="12" rx="3" fill="#111820"/>
+<rect x="894.00" y="143.00" width="12" height="12" rx="3" fill="#111820"/>
+<rect x="894.00" y="159.00" width="12" height="12" rx="3" fill="#111820"/>
+<rect x="894.00" y="175.00" width="12" height="12" rx="3" fill="#111820"/>
+<rect x="894.00" y="191.00" width="12" height="12" rx="3" fill="#111820"/>
+<rect x="894.00" y="207.00" width="12" height="12" rx="3" fill="#111820"/>
+<rect class="food" x="62.00" y="159.00" width="12" height="12" rx="3" fill="#38583c" style="animation-name:eat3"><title>2025-11-26: 1 contributions</title></rect>
+<rect class="food" x="78.00" y="159.00" width="12" height="12" rx="3" fill="#38583c" style="animation-name:eat10"><title>2025-12-03: 3 contributions</title></rect>
+<rect class="food" x="78.00" y="175.00" width="12" height="12" rx="3" fill="#38583c" style="animation-name:eat11"><title>2025-12-04: 2 contributions</title></rect>
+<rect class="food" x="94.00" y="111.00" width="12" height="12" rx="3" fill="#38583c" style="animation-name:eat14"><title>2025-12-07: 2 contributions</title></rect>
+<rect class="food" x="94.00" y="127.00" width="12" height="12" rx="3" fill="#38583c" style="animation-name:eat15"><title>2025-12-08: 1 contributions</title></rect>
+<rect class="food" x="94.00" y="159.00" width="12" height="12" rx="3" fill="#38583c" style="animation-name:eat17"><title>2025-12-10: 2 contributions</title></rect>
+<rect class="food" x="126.00" y="127.00" width="12" height="12" rx="3" fill="#38583c" style="animation-name:eat29"><title>2025-12-22: 1 contributions</title></rect>
+<rect class="food" x="126.00" y="159.00" width="12" height="12" rx="3" fill="#38583c" style="animation-name:eat31"><title>2025-12-24: 1 contributions</title></rect>
+<rect class="food" x="126.00" y="175.00" width="12" height="12" rx="3" fill="#93be49" style="animation-name:eat32"><title>2025-12-25: 11 contributions</title></rect>
+<rect class="food" x="206.00" y="159.00" width="12" height="12" rx="3" fill="#38583c" style="animation-name:eat66"><title>2026-01-28: 2 contributions</title></rect>
+<rect class="food" x="238.00" y="143.00" width="12" height="12" rx="3" fill="#638a41" style="animation-name:eat79"><title>2026-02-10: 5 contributions</title></rect>
+<rect class="food" x="398.00" y="207.00" width="12" height="12" rx="3" fill="#638a41" style="animation-name:eat153"><title>2026-04-25: 8 contributions</title></rect>
+<rect class="food" x="414.00" y="159.00" width="12" height="12" rx="3" fill="#638a41" style="animation-name:eat157"><title>2026-04-29: 9 contributions</title></rect>
+<rect class="food" x="414.00" y="191.00" width="12" height="12" rx="3" fill="#638a41" style="animation-name:eat159"><title>2026-05-01: 9 contributions</title></rect>
+<rect class="food" x="430.00" y="111.00" width="12" height="12" rx="3" fill="#638a41" style="animation-name:eat161"><title>2026-05-03: 9 contributions</title></rect>
+<rect class="food" x="430.00" y="127.00" width="12" height="12" rx="3" fill="#38583c" style="animation-name:eat162"><title>2026-05-04: 3 contributions</title></rect>
+<rect class="food" x="430.00" y="143.00" width="12" height="12" rx="3" fill="#38583c" style="animation-name:eat163"><title>2026-05-05: 1 contributions</title></rect>
+<rect class="food" x="702.00" y="191.00" width="12" height="12" rx="3" fill="#38583c" style="animation-name:eat285"><title>2026-09-04: 4 contributions</title></rect>
+<rect class="food" x="718.00" y="175.00" width="12" height="12" rx="3" fill="#38583c" style="animation-name:eat291"><title>2026-09-10: 1 contributions</title></rect>
+<rect class="food" x="750.00" y="159.00" width="12" height="12" rx="3" fill="#c8ff5f" style="animation-name:eat304"><title>2026-09-23: 19 contributions</title></rect>
+<rect class="food" x="830.00" y="175.00" width="12" height="12" rx="3" fill="#38583c" style="animation-name:eat340"><title>2026-10-29: 4 contributions</title></rect>
+<rect class="food" x="862.00" y="159.00" width="12" height="12" rx="3" fill="#38583c" style="animation-name:eat353"><title>2026-11-11: 4 contributions</title></rect>
+<rect class="food" x="878.00" y="175.00" width="12" height="12" rx="3" fill="#38583c" style="animation-name:eat361"><title>2026-11-19: 2 contributions</title></rect>
 <g class="snake">
 <path class="snake-tail" d="M68.00,117.00 L84.00,117.00 L100.00,117.00 L116.00,117.00 L132.00,117.00 L148.00,117.00 L164.00,117.00 L180.00,117.00 L196.00,117.00 L212.00,117.00 L228.00,117.00 L244.00,117.00 L260.00,117.00 L276.00,117.00 L292.00,117.00 L308.00,117.00 L324.00,117.00 L340.00,117.00 L356.00,117.00 L372.00,117.00 L388.00,117.00 L404.00,117.00 L420.00,117.00 L436.00,117.00 L452.00,117.00 L468.00,117.00 L484.00,117.00 L500.00,117.00 L516.00,117.00 L532.00,117.00 L548.00,117.00 L564.00,117.00 L580.00,117.00 L596.00,117.00 L612.00,117.00 L628.00,117.00 L644.00,117.00 L660.00,117.00 L676.00,117.00 L692.00,117.00 L708.00,117.00 L724.00,117.00 L740.00,117.00 L756.00,117.00 L772.00,117.00 L788.00,117.00 L804.00,117.00 L820.00,117.00 L836.00,117.00 L852.00,117.00 L868.00,117.00 L884.00,117.00 L900.00,117.00 L900.00,133.00 L884.00,133.00 L868.00,133.00 L852.00,133.00 L836.00,133.00 L820.00,133.00 L804.00,133.00 L788.00,133.00 L772.00,133.00 L756.00,133.00 L740.00,133.00 L724.00,133.00 L708.00,133.00 L692.00,133.00 L676.00,133.00 L660.00,133.00 L644.00,133.00 L628.00,133.00 L612.00,133.00 L596.00,133.00 L580.00,133.00 L564.00,133.00 L548.00,133.00 L532.00,133.00 L516.00,133.00 L500.00,133.00 L484.00,133.00 L468.00,133.00 L452.00,133.00 L436.00,133.00 L420.00,133.00 L404.00,133.00 L388.00,133.00 L372.00,133.00 L356.00,133.00 L340.00,133.00 L324.00,133.00 L308.00,133.00 L292.00,133.00 L276.00,133.00 L260.00,133.00 L244.00,133.00 L228.00,133.00 L212.00,133.00 L196.00,133.00 L180.00,133.00 L164.00,133.00 L148.00,133.00 L132.00,133.00 L116.00,133.00 L100.00,133.00 L84.00,133.00 L68.00,133.00 L68.00,149.00 L84.00,149.00 L100.00,149.00 L116.00,149.00 L132.00,149.00 L148.00,149.00 L164.00,149.00 L180.00,149.00 L196.00,149.00 L212.00,149.00 L228.00,149.00 L244.00,149.00 L260.00,149.00 L276.00,149.00 L292.00,149.00 L308.00,149.00 L324.00,149.00 L340.00,149.00 L356.00,149.00 L372.00,149.00 L388.00,149.00 L404.00,149.00 L420.00,149.00 L436.00,149.00 L452.00,149.00 L468.00,149.00 L484.00,149.00 L500.00,149.00 L516.00,149.00 L532.00,149.00 L548.00,149.00 L564.00,149.00 L580.00,149.00 L596.00,149.00 L612.00,149.00 L628.00,149.00 L644.00,149.00 L660.00,149.00 L676.00,149.00 L692.00,149.00 L708.00,149.00 L724.00,149.00 L740.00,149.00 L756.00,149.00 L772.00,149.00 L788.00,149.00 L804.00,149.00 L820.00,149.00 L836.00,149.00 L852.00,149.00 L868.00,149.00 L884.00,149.00 L900.00,149.00 L900.00,165.00 L884.00,165.00 L868.00,165.00 L852.00,165.00 L836.00,165.00 L820.00,165.00 L804.00,165.00 L788.00,165.00 L772.00,165.00 L756.00,165.00 L740.00,165.00 L724.00,165.00 L708.00,165.00 L692.00,165.00 L676.00,165.00 L660.00,165.00 L644.00,165.00 L628.00,165.00 L612.00,165.00 L596.00,165.00 L580.00,165.00 L564.00,165.00 L548.00,165.00 L532.00,165.00 L516.00,165.00 L500.00,165.00 L484.00,165.00 L468.00,165.00 L452.00,165.00 L436.00,165.00 L420.00,165.00 L404.00,165.00 L388.00,165.00 L372.00,165.00 L356.00,165.00 L340.00,165.00 L324.00,165.00 L308.00,165.00 L292.00,165.00 L276.00,165.00 L260.00,165.00 L244.00,165.00 L228.00,165.00 L212.00,165.00 L196.00,165.00 L180.00,165.00 L164.00,165.00 L148.00,165.00 L132.00,165.00 L116.00,165.00 L100.00,165.00 L84.00,165.00 L68.00,165.00 L68.00,181.00 L84.00,181.00 L100.00,181.00 L116.00,181.00 L132.00,181.00 L148.00,181.00 L164.00,181.00 L180.00,181.00 L196.00,181.00 L212.00,181.00 L228.00,181.00 L244.00,181.00 L260.00,181.00 L276.00,181.00 L292.00,181.00 L308.00,181.00 L324.00,181.00 L340.00,181.00 L356.00,181.00 L372.00,181.00 L388.00,181.00 L404.00,181.00 L420.00,181.00 L436.00,181.00 L452.00,181.00 L468.00,181.00 L484.00,181.00 L500.00,181.00 L516.00,181.00 L532.00,181.00 L548.00,181.00 L564.00,181.00 L580.00,181.00 L596.00,181.00 L612.00,181.00 L628.00,181.00 L644.00,181.00 L660.00,181.00 L676.00,181.00 L692.00,181.00 L708.00,181.00 L724.00,181.00 L740.00,181.00 L756.00,181.00 L772.00,181.00 L788.00,181.00 L804.00,181.00 L820.00,181.00 L836.00,181.00 L852.00,181.00 L868.00,181.00 L884.00,181.00 L900.00,181.00 L900.00,197.00 L884.00,197.00 L868.00,197.00 L852.00,197.00 L836.00,197.00 L820.00,197.00 L804.00,197.00 L788.00,197.00 L772.00,197.00 L756.00,197.00 L740.00,197.00 L724.00,197.00 L708.00,197.00 L692.00,197.00 L676.00,197.00 L660.00,197.00 L644.00,197.00 L628.00,197.00 L612.00,197.00 L596.00,197.00 L580.00,197.00 L564.00,197.00 L548.00,197.00 L532.00,197.00 L516.00,197.00 L500.00,197.00 L484.00,197.00 L468.00,197.00 L452.00,197.00 L436.00,197.00 L420.00,197.00 L404.00,197.00 L388.00,197.00 L372.00,197.00 L356.00,197.00 L340.00,197.00 L324.00,197.00 L308.00,197.00 L292.00,197.00 L276.00,197.00 L260.00,197.00 L244.00,197.00 L228.00,197.00 L212.00,197.00 L196.00,197.00 L180.00,197.00 L164.00,197.00 L148.00,197.00 L132.00,197.00 L116.00,197.00 L100.00,197.00 L84.00,197.00 L68.00,197.00 L68.00,213.00 L84.00,213.00 L100.00,213.00 L116.00,213.00 L132.00,213.00 L148.00,213.00 L164.00,213.00 L180.00,213.00 L196.00,213.00 L212.00,213.00 L228.00,213.00 L244.00,213.00 L260.00,213.00 L276.00,213.00 L292.00,213.00 L308.00,213.00 L324.00,213.00 L340.00,213.00 L356.00,213.00 L372.00,213.00 L388.00,213.00 L404.00,213.00 L420.00,213.00 L436.00,213.00 L452.00,213.00 L468.00,213.00 L484.00,213.00 L500.00,213.00 L516.00,213.00 L532.00,213.00 L548.00,213.00 L564.00,213.00 L580.00,213.00 L596.00,213.00 L612.00,213.00 L628.00,213.00 L644.00,213.00 L660.00,213.00 L676.00,213.00 L692.00,213.00 L708.00,213.00 L724.00,213.00 L740.00,213.00 L756.00,213.00 L772.00,213.00 L788.00,213.00 L804.00,213.00 L820.00,213.00 L836.00,213.00 L852.00,213.00 L868.00,213.00 L884.00,213.00 L900.00,213.00 L916.00,237.00 L48.00,237.00 L48.00,117.00 L68.00,117.00 Z" stroke="#b8a5ff" stroke-width="7" stroke-dasharray="78 6878.8444" stroke-dashoffset="78" style="animation-name:tail"/>
 <path class="snake-tail" d="M68.00,117.00 L84.00,117.00 L100.00,117.00 L116.00,117.00 L132.00,117.00 L148.00,117.00 L164.00,117.00 L180.00,117.00 L196.00,117.00 L212.00,117.00 L228.00,117.00 L244.00,117.00 L260.00,117.00 L276.00,117.00 L292.00,117.00 L308.00,117.00 L324.00,117.00 L340.00,117.00 L356.00,117.00 L372.00,117.00 L388.00,117.00 L404.00,117.00 L420.00,117.00 L436.00,117.00 L452.00,117.00 L468.00,117.00 L484.00,117.00 L500.00,117.00 L516.00,117.00 L532.00,117.00 L548.00,117.00 L564.00,117.00 L580.00,117.00 L596.00,117.00 L612.00,117.00 L628.00,117.00 L644.00,117.00 L660.00,117.00 L676.00,117.00 L692.00,117.00 L708.00,117.00 L724.00,117.00 L740.00,117.00 L756.00,117.00 L772.00,117.00 L788.00,117.00 L804.00,117.00 L820.00,117.00 L836.00,117.00 L852.00,117.00 L868.00,117.00 L884.00,117.00 L900.00,117.00 L900.00,133.00 L884.00,133.00 L868.00,133.00 L852.00,133.00 L836.00,133.00 L820.00,133.00 L804.00,133.00 L788.00,133.00 L772.00,133.00 L756.00,133.00 L740.00,133.00 L724.00,133.00 L708.00,133.00 L692.00,133.00 L676.00,133.00 L660.00,133.00 L644.00,133.00 L628.00,133.00 L612.00,133.00 L596.00,133.00 L580.00,133.00 L564.00,133.00 L548.00,133.00 L532.00,133.00 L516.00,133.00 L500.00,133.00 L484.00,133.00 L468.00,133.00 L452.00,133.00 L436.00,133.00 L420.00,133.00 L404.00,133.00 L388.00,133.00 L372.00,133.00 L356.00,133.00 L340.00,133.00 L324.00,133.00 L308.00,133.00 L292.00,133.00 L276.00,133.00 L260.00,133.00 L244.00,133.00 L228.00,133.00 L212.00,133.00 L196.00,133.00 L180.00,133.00 L164.00,133.00 L148.00,133.00 L132.00,133.00 L116.00,133.00 L100.00,133.00 L84.00,133.00 L68.00,133.00 L68.00,149.00 L84.00,149.00 L100.00,149.00 L116.00,149.00 L132.00,149.00 L148.00,149.00 L164.00,149.00 L180.00,149.00 L196.00,149.00 L212.00,149.00 L228.00,149.00 L244.00,149.00 L260.00,149.00 L276.00,149.00 L292.00,149.00 L308.00,149.00 L324.00,149.00 L340.00,149.00 L356.00,149.00 L372.00,149.00 L388.00,149.00 L404.00,149.00 L420.00,149.00 L436.00,149.00 L452.00,149.00 L468.00,149.00 L484.00,149.00 L500.00,149.00 L516.00,149.00 L532.00,149.00 L548.00,149.00 L564.00,149.00 L580.00,149.00 L596.00,149.00 L612.00,149.00 L628.00,149.00 L644.00,149.00 L660.00,149.00 L676.00,149.00 L692.00,149.00 L708.00,149.00 L724.00,149.00 L740.00,149.00 L756.00,149.00 L772.00,149.00 L788.00,149.00 L804.00,149.00 L820.00,149.00 L836.00,149.00 L852.00,149.00 L868.00,149.00 L884.00,149.00 L900.00,149.00 L900.00,165.00 L884.00,165.00 L868.00,165.00 L852.00,165.00 L836.00,165.00 L820.00,165.00 L804.00,165.00 L788.00,165.00 L772.00,165.00 L756.00,165.00 L740.00,165.00 L724.00,165.00 L708.00,165.00 L692.00,165.00 L676.00,165.00 L660.00,165.00 L644.00,165.00 L628.00,165.00 L612.00,165.00 L596.00,165.00 L580.00,165.00 L564.00,165.00 L548.00,165.00 L532.00,165.00 L516.00,165.00 L500.00,165.00 L484.00,165.00 L468.00,165.00 L452.00,165.00 L436.00,165.00 L420.00,165.00 L404.00,165.00 L388.00,165.00 L372.00,165.00 L356.00,165.00 L340.00,165.00 L324.00,165.00 L308.00,165.00 L292.00,165.00 L276.00,165.00 L260.00,165.00 L244.00,165.00 L228.00,165.00 L212.00,165.00 L196.00,165.00 L180.00,165.00 L164.00,165.00 L148.00,165.00 L132.00,165.00 L116.00,165.00 L100.00,165.00 L84.00,165.00 L68.00,165.00 L68.00,181.00 L84.00,181.00 L100.00,181.00 L116.00,181.00 L132.00,181.00 L148.00,181.00 L164.00,181.00 L180.00,181.00 L196.00,181.00 L212.00,181.00 L228.00,181.00 L244.00,181.00 L260.00,181.00 L276.00,181.00 L292.00,181.00 L308.00,181.00 L324.00,181.00 L340.00,181.00 L356.00,181.00 L372.00,181.00 L388.00,181.00 L404.00,181.00 L420.00,181.00 L436.00,181.00 L452.00,181.00 L468.00,181.00 L484.00,181.00 L500.00,181.00 L516.00,181.00 L532.00,181.00 L548.00,181.00 L564.00,181.00 L580.00,181.00 L596.00,181.00 L612.00,181.00 L628.00,181.00 L644.00,181.00 L660.00,181.00 L676.00,181.00 L692.00,181.00 L708.00,181.00 L724.00,181.00 L740.00,181.00 L756.00,181.00 L772.00,181.00 L788.00,181.00 L804.00,181.00 L820.00,181.00 L836.00,181.00 L852.00,181.00 L868.00,181.00 L884.00,181.00 L900.00,181.00 L900.00,197.00 L884.00,197.00 L868.00,197.00 L852.00,197.00 L836.00,197.00 L820.00,197.00 L804.00,197.00 L788.00,197.00 L772.00,197.00 L756.00,197.00 L740.00,197.00 L724.00,197.00 L708.00,197.00 L692.00,197.00 L676.00,197.00 L660.00,197.00 L644.00,197.00 L628.00,197.00 L612.00,197.00 L596.00,197.00 L580.00,197.00 L564.00,197.00 L548.00,197.00 L532.00,197.00 L516.00,197.00 L500.00,197.00 L484.00,197.00 L468.00,197.00 L452.00,197.00 L436.00,197.00 L420.00,197.00 L404.00,197.00 L388.00,197.00 L372.00,197.00 L356.00,197.00 L340.00,197.00 L324.00,197.00 L308.00,197.00 L292.00,197.00 L276.00,197.00 L260.00,197.00 L244.00,197.00 L228.00,197.00 L212.00,197.00 L196.00,197.00 L180.00,197.00 L164.00,197.00 L148.00,197.00 L132.00,197.00 L116.00,197.00 L100.00,197.00 L84.00,197.00 L68.00,197.00 L68.00,213.00 L84.00,213.00 L100.00,213.00 L116.00,213.00 L132.00,213.00 L148.00,213.00 L164.00,213.00 L180.00,213.00 L196.00,213.00 L212.00,213.00 L228.00,213.00 L244.00,213.00 L260.00,213.00 L276.00,213.00 L292.00,213.00 L308.00,213.00 L324.00,213.00 L340.00,213.00 L356.00,213.00 L372.00,213.00 L388.00,213.00 L404.00,213.00 L420.00,213.00 L436.00,213.00 L452.00,213.00 L468.00,213.00 L484.00,213.00 L500.00,213.00 L516.00,213.00 L532.00,213.00 L548.00,213.00 L564.00,213.00 L580.00,213.00 L596.00,213.00 L612.00,213.00 L628.00,213.00 L644.00,213.00 L660.00,213.00 L676.00,213.00 L692.00,213.00 L708.00,213.00 L724.00,213.00 L740.00,213.00 L756.00,213.00 L772.00,213.00 L788.00,213.00 L804.00,213.00 L820.00,213.00 L836.00,213.00 L852.00,213.00 L868.00,213.00 L884.00,213.00 L900.00,213.00 L916.00,237.00 L48.00,237.00 L48.00,117.00 L68.00,117.00 Z" stroke="#9ccf62" stroke-width="9" stroke-dasharray="53 6903.8444" stroke-dashoffset="53" style="animation-name:middle"/>
@@ -464,7 +460,7 @@
 <circle cx="3" cy="-3" r="1.5" fill="#132015"/><circle cx="3" cy="3" r="1.5" fill="#132015"/>
 </g></g>
 <path d="M36 251H924" stroke="#29323d"/>
-<text x="36" y="275" fill="#a3b0bf" font-size="11">2025-11-16 — 2026-11-21 · Public contribution calendar</text>
+<text x="36" y="275" fill="#a3b0bf" font-size="11">2025-11-23 — 2026-11-22 · Public contribution calendar</text>
 <text x="752" y="275" fill="#a3b0bf" font-size="11">Less</text>
 <rect x="783" y="265" width="12" height="12" rx="3" fill="#19242c"/>
 <rect x="801" y="265" width="12" height="12" rx="3" fill="#38583c"/>
